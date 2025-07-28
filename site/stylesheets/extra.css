@@ -8,7 +8,7 @@
 
 /* Dark theme custom colors */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #000111;
+  --md-primary-fg-color: #001f3a;
   --md-default-bg-color: #090d1d;
   --md-accent-fg-color: #8e92f8;
   --md-typeset-a-color: var(--md-accent-fg-color);
@@ -54,4 +54,10 @@
     font-size: 0.9rem;
 }
 
-
+/* My own custom colors */
+[data-md-color-scheme="danielpanea"] {
+  --md-primary-fg-color:        #001f3a;
+  --md-accent-fg-color: #2856f7;
+  --md-typeset-a-color: var(--md-accent-fg-color);
+  --md-footer-bg-color: var(--md-primary-fg-color);
+}

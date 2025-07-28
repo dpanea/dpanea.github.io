@@ -1,76 +1,53 @@
 ---
-title: Enterprise Chatbot for Company Y
-description: Development of a private ChatGPT-like tool for analyzing mobility data and policy evaluation in the public sector
+title: Synthetic Data for Model Validation
+description: Privacy-Compliant AI Testing through Realistic Data Simulation
 ---
 
-# Enterprise Chatbot for the Company Y
+<div class="project-hero-layout" markdown>
 
-??? tip "Portfolio Best Practices"
-    This is a simplified example project. When creating your own portfolio:
-    
-    - Include detailed technical challenges and how you solved them
-    - Add specific metrics and KPIs that demonstrate impact
-    - Show code snippets of interesting implementations
-    - Include architecture diagrams and system designs
-    - Document your decision-making process
-    - Highlight your specific contributions to the project
-    - Add visuals of the final product (if possible)
+<div class="project-content" markdown>
+
+# Synthetic Data for Model Validation
+## Privacy-Compliant AI Testing through Realistic Data Simulation
 
 !!! abstract "Case Study Summary"
-    **Client**: Dev X  
-    **Website**: [devx.com](https://devx.com)  
-    **Industry**: Software Development  
+    **Client**: Digitflow  
+    **Website**: [digitflow.de/](https://digitflow.de/)  
+    **Industry**: IT Services
     
     **Impact Metrics**:
-    
-    - 90% reduction in customer service overhead (projected)
-    - 100% accuracy on initial evaluation datasets
-    - < 3 second response time for customer inquiries
-    - Successfully transitioned 12 CSRs to account management roles
-    - $240,000 annual cost savings in customer support operations
-
-Company Y an AI project featuring a private ChatGPT-like tool, streamlining mobility data analysis and advancing digital innovation in public sector policy evaluation.
+        
+    - 100% compliance with GDPR and client-specific privacy requirements  
+    - 3x faster model validation cycles using high-fidelity synthetic data  
+    - 60% improvement in model robustness under edge-case scenarios  
+    - Enabled safe testing of on-premise AI systems with zero exposure risk  
+    - Reduced reliance on real user data by over 95%
 
 ## Challenge
 
-The regional data team at Company Y faced the challenge of analyzing complex mobility data, including cars, bridges, traffic, and cyclists. Tasked with assessing policy compliance and the impact of changes, they struggled with data scattered across multiple systems, such as the Dexter portal's structured SQL data and various policy documents. This dispersion made analysis laborious, prompting the Province to explore how digitization and AI could streamline the process and foster innovation.
+Digitflow is a German company offering intelligent automation solutions with a strong focus on privacy, data protection, and on-premise AI deployments. For one of their clients, whose workflow automation system relies on sensitive user data, the challenge was to create synthetic datasets that replicate real-world conditions without exposing any confidential information. These datasets were essential for validating and fine-tuning the AI models powering the system.
 
-## Our Approach
+## My Approach
 
-To tackle this challenge, we developed a custom-built AI solution similar to a "private version of ChatGPT." This tool was designed to access and analyze large volumes of PDF documents and structured data exported from the Dexter database. By enabling a ChatGPT-like interaction, users could query this diverse data pool in a conversational manner, leveraging the AI to gain company-specific insights.
+I designed and implemented a comprehensive synthetic data generation pipeline tailored to the client's needs. The data had to accurately mimic the structure, variability, and imperfections of the real user data, including typos, incomplete interactions, and logically connected data fields. To achieve this, I applied advanced statistical modeling, dynamic context-aware generation, and large language models (LLMs) to produce realistic language and behavior patterns. Logical constraints and statistical distributions were embedded to maintain the integrity and realism of the data.
 
-## Results & Impact
+## Results
 
-- Successfully integrated structured SQL data and unstructured PDF documents
-- Featured in major company meetings
-- Enabled conversational querying of complex mobility data
-- Streamlined policy compliance assessment
-- Enhanced decision-making through comprehensive data analysis
+The synthetic datasets enabled safe and effective model training and validation, significantly improving pipeline performance without compromising data privacy. The models could now be tested under real-world conditions, ensuring robust deployment while remaining fully compliant with data protection regulations.
 
-## Solution Overview
+## Technical Expertise
 
-![Architecture Diagram](../../assets/openai-end-to-end-aml-deployment.svg)
+This project combined data engineering, statistical simulation, and natural language generation techniques. Key components included probabilistic modeling, dynamic rule-based generation, LLMs for realistic language creation, and the injection of context-aware noise patterns. These efforts ensured high-fidelity synthetic data suitable for real-world AI validation.
 
-*Baseline OpenAI end-to-end chat reference architecture*
+</div>
 
-## Tech Stack
+<div class="project-image-container" markdown>
 
-- OpenAI
-- Pinecone vector database
-- Microsoft Azure cloud infrastructure
-- Python backend services
-- FastAPI for RESTful endpoints
-- Docker containerization
-- GitHub Actions for CI/CD pipeline
+![Synthetic Data Generation](../../assets/synthetic-data.jpg){ .project-hero-image alt="Synthetic data generation and privacy-compliant AI model validation" }
 
-## Additional Context
+</div>
 
-- Timeline: 3 months
-- Team Size: 2 people
-- Role: AI Engineer
-- Expertise in custom chatbot development
-- Specialization in retrieval-augmented generation
-- Focus on OpenAI model integration
+</div>
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 

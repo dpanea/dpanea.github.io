@@ -4,32 +4,24 @@ description: Enhancing Student Feedback and Teacher Workflows through Intelligen
 
 ---
 
+<div class="project-hero-layout" markdown>
+
+<div class="project-content" markdown>
+
 # AI for Education 
 ## Enhancing Student Feedback and Teacher Workflows through Intelligent Automation
 
-<!-- ??? tip "Portfolio Best Practices"
-    This is a simplified example project. When creating your own portfolio:
-    
-    - Include detailed technical challenges and how you solved them
-    - Add specific metrics and KPIs that demonstrate impact
-    - Show code snippets of interesting implementations
-    - Include architecture diagrams and system designs
-    - Document your decision-making process
-    - Highlight your specific contributions to the project
-    - Add visuals of the final product (if possible) -->
-
 !!! abstract "Case Study Summary"
-    **Client**: Mark My Words
+    **Client**: Mark My Words   
     **Website**: [markmywords.au](https://markmywords.au/)  
     **Industry**: Educational Technology
+
+    **Impact metrics**:
     
-    **Impact Metrics**:
-    
-    - 90% reduction in customer service overhead (projected)
-    - 100% accuracy on initial evaluation datasets
-    - < 3 second response time for customer inquiries
-    - Successfully transitioned 12 CSRs to account management roles
-    - $240,000 annual cost savings in customer support operations
+    - 85% reduction in teacher workload for essay feedback
+    - < 3 seconds to generate context-aware, personalized responses
+    - 4x improvement in feedback relevance scores (based on pilot testing)
+    - Enabled teachers to focus 30% more time on student mentoring
 
 ## Challenge 
 
@@ -44,6 +36,16 @@ The platform is now capable of processing entire sets of student writing in a sh
 
 ## Technical Expertise
 This project brings together advanced machine learning and natural language processing techniques, including RAG architectures, transformer models, sentence embeddings, and large language model fine-tuning. The latter also involved synthetic data generation for model training. FastAPI and asynchronous endpoints were used to ensure reliable backend performance and smooth integration.
+
+</div>
+
+<div class="project-image-container" markdown>
+
+![AI for Education Technology](../../assets/ai-for-education.jpg){ .project-hero-image alt="AI-powered educational technology and student feedback systems" }
+
+</div>
+
+</div>
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 

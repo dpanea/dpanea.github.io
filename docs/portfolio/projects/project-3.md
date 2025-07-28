@@ -1,76 +1,51 @@
 ---
-title: Enterprise Chatbot for Company Y
-description: Development of a private ChatGPT-like tool for analyzing mobility data and policy evaluation in the public sector
+title: Custom ML Algorithms and Physics-Based Navigation Models
+description: Enhancing AI-Driven Navigation with Sensor Fusion and Time-Series Intelligence
 ---
 
-# Enterprise Chatbot for the Company Y
+<div class="project-hero-layout" markdown>
 
-??? tip "Portfolio Best Practices"
-    This is a simplified example project. When creating your own portfolio:
-    
-    - Include detailed technical challenges and how you solved them
-    - Add specific metrics and KPIs that demonstrate impact
-    - Show code snippets of interesting implementations
-    - Include architecture diagrams and system designs
-    - Document your decision-making process
-    - Highlight your specific contributions to the project
-    - Add visuals of the final product (if possible)
+<div class="project-content" markdown>
+
+# Custom ML Algorithms and Physics-Based Models
+## Enhancing AI-Driven Navigation with Sensor Fusion and Time-Series Intelligence
 
 !!! abstract "Case Study Summary"
-    **Client**: Dev X  
-    **Website**: [devx.com](https://devx.com)  
-    **Industry**: Software Development  
+    **Client**: NeoMatrix  
+    **Website**: [neomatrix.com.au](https://www.neomatrix.com.au/)  
+    **Industry**: Positioning and Tracking Systems
     
     **Impact Metrics**:
-    
-    - 90% reduction in customer service overhead (projected)
-    - 100% accuracy on initial evaluation datasets
-    - < 3 second response time for customer inquiries
-    - Successfully transitioned 12 CSRs to account management roles
-    - $240,000 annual cost savings in customer support operations
-
-Company Y an AI project featuring a private ChatGPT-like tool, streamlining mobility data analysis and advancing digital innovation in public sector policy evaluation.
+        
+    - 20% increased tracking accuracy with new sensor data
+    - Successfully integrated new sensor types into the navigation stack
+    - Route keypoints and features are correctly detected 90% of the time
 
 ## Challenge
 
-The regional data team at Company Y faced the challenge of analyzing complex mobility data, including cars, bridges, traffic, and cyclists. Tasked with assessing policy compliance and the impact of changes, they struggled with data scattered across multiple systems, such as the Dexter portal's structured SQL data and various policy documents. This dispersion made analysis laborious, prompting the Province to explore how digitization and AI could streamline the process and foster innovation.
+NeoMatrix is developing low-power, AI-enhanced tracking systems that function where traditional satellite navigation fails—such as inside tunnels, shipping containers, or remote environments. The challenge was to extend their proprietary tracking technology by integrating new sensor types and improving signal interpretation in noisy, real-world conditions.
 
-## Our Approach
+## My Approach
 
-To tackle this challenge, we developed a custom-built AI solution similar to a "private version of ChatGPT." This tool was designed to access and analyze large volumes of PDF documents and structured data exported from the Dexter database. By enabling a ChatGPT-like interaction, users could query this diverse data pool in a conversational manner, leveraging the AI to gain company-specific insights.
+I developed a custom algorithms to better align and interpret disparate time-series data from multiple sensors. I designed mathematical and physical models to simulate sensor behavior under varying environmental conditions and built pipelines to correlate multi-modal data, enhancing system robustness. I also implemented lightweight machine learning (ML) models for forecasting and pattern recognition, enabling predictive tracking even with intermittent signals.
 
-## Results & Impact
+## Results
 
-- Successfully integrated structured SQL data and unstructured PDF documents
-- Featured in major company meetings
-- Enabled conversational querying of complex mobility data
-- Streamlined policy compliance assessment
-- Enhanced decision-making through comprehensive data analysis
+The upgraded tracking system demonstrated improved accuracy and reliability in GPS-denied environments when incorporating the new sensor inputs. Power efficiency was preserved while enabling real-time inference and long-term device deployment with minimal maintenance.
 
-## Solution Overview
+## Technical Expertise
 
-![Architecture Diagram](../../assets/openai-end-to-end-aml-deployment.svg)
+This project leveraged time-series analysis, signal processing, and sensor fusion. Key techniques included Dynamic Time Warping, Kalman filtering and Madgwick fusion implemented in python. On the machine learning side, custom convolutional neural networks were constructed and trained using PyTorch.
 
-*Baseline OpenAI end-to-end chat reference architecture*
+</div>
 
-## Tech Stack
+<div class="project-image-container" markdown>
 
-- OpenAI
-- Pinecone vector database
-- Microsoft Azure cloud infrastructure
-- Python backend services
-- FastAPI for RESTful endpoints
-- Docker containerization
-- GitHub Actions for CI/CD pipeline
+![Advanced Navigation Systems](../../assets/navigation-systems.jpg){ .project-hero-image alt="Advanced navigation and tracking systems technology" }
 
-## Additional Context
+</div>
 
-- Timeline: 3 months
-- Team Size: 2 people
-- Role: AI Engineer
-- Expertise in custom chatbot development
-- Specialization in retrieval-augmented generation
-- Focus on OpenAI model integration
+</div>
 
 <div class="grid cards" style="margin-top: 3rem" markdown>
 

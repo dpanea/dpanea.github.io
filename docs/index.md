@@ -19,7 +19,7 @@ canonical_url: https://www.danielpanea.com/
 
 <div class="text-intro-grid" markdown>
 
-# Cut Through the AI Noise. Build What Actually Works
+# From AI Hype to AI That Helps
 
 ### I help companies simplify AI and turn it into practical, secure business value.
 
@@ -84,44 +84,32 @@ Here's what sets me apart and how I can help drive value for your business:
     I don’t chase buzzwords, I build solutions that solve real problems. Every system I design is grounded in practical impact, measurable outcomes, and maintainability.
 
 </div>
-
-<!-- ## What my past clients say about my work
+## What my past clients say about my work
 
 <div class="grid cards testimonials" markdown>
 
--   :material-format-quote-open:{ .lg .middle } Adrian Dragomir
+-   :material-format-quote-open:{ .lg .middle } ![Chris Cooper](assets/chris.jpeg){ .testimonial-author-image } Chris Cooper
     
-    Founder at Sferal
+    Founder at NeoMatrix
 
     ---
 
-    "Dave is a true professional and my collaboration with him has been flawless. **He took his time and spent 3 days with me and my team in Mamaia, Romania where he was a guest for 3 sessions of my podcast Waves of AI**. He is one of the most competent people I know that has a real understanding of how AI works and how to integrate it quickly in your company."
+    "Professional, smart and friendly. Daniel delivers outstanding work, and has a solid grasp of technical domains. We value his work, and hope to continue engaging with him in future."
 
--   :material-format-quote-open:{ .lg .middle } Barbara van den Bosch
+-    :material-format-quote-open:{ .lg .middle } ![Kiril Ivanov Kurtev](assets/kiril.jpeg){ .testimonial-author-image } Kiril Ivanov Kurtev
     
-    Founder at Viverve
+    Tech Lead at Wooptix
 
     ---
 
-    "Together with Datalumina, we developed a tailor-made program where I, as a school leader, can now bring together vast amounts of information in one place and automate key tasks. **Beyond the tremendous quality improvement for our organization, working with Datalumina was an extremely pleasant experience**."
+    "I had the pleasure of working with Daniel for two years at Wootpix. During this time, I was consistently impressed by his dedication, professionalism, and ability to quickly develop effective solutions to complex problems.
 
--   :material-format-quote-open:{ .lg .middle } Rene Raaphorst
-    
-    Founder at Crypto Insiders
+    Daniel has strong expertise in Python and an excellent understanding of mathematical modeling, which he applies with precision to deliver high-quality results. He is a highly skilled professional and a valuable team player.
 
-    ---
+    I highly recommend Daniel for any organization or project that requires technical excellence, problem-solving abilities, and a strong work ethic."
 
-    "My experience with Datalumina has been excellent. **They think along with you every step of the way, from proof of concept to a fully functional product**. I was amazed by the quality of the results and found the collaboration very enjoyable. I highly recommend Dave and Datalumina to everyone!"
 
--   :material-format-quote-open:{ .lg .middle } Kelsen
-    
-    Founder at Datavisum
-
-    ---
-
-    "I am thankful for having come across Dave and Data Freelancer, it was one of the best investment decisions I've made in 2024. **From effective ways to create inbound marketing strategies using social media, through solution architecture design to address all kinds of business challenges**, you will extract a great deal of value from diverse perspectives."
-
-</div> -->
+</div>
 
 ## Here's how I can help you get started
 
