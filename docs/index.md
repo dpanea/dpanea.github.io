@@ -102,7 +102,7 @@ Here's what sets me apart and how I can help drive value for your business:
 
     ---
 
-    "It has been a privilege to have Daniel on our team these past two years. From day one, he proved himself an exceptional professional, not only by excelling in every task assigned to him, whether programming, optical simulation, or lab work, but also through his constant drive to improve our projects. His unique blend of theoretical training as a physicist, practical skills, and meticulous attention to detail make him a reliable teammate.
+    "It has been a privilege to have Daniel on our team these past two years. From day one, he proved himself an exceptional professional, not only by excelling in every task assigned to him, but also through his constant drive to improve our projects. His unique blend of theoretical training as a physicist, practical skills, and meticulous attention to detail make him a reliable teammate.
 
     Beyond his technical abilities, Daniel consistently brought a commitment to quality, even when challenges pushed him outside his comfort zone. While his departure is a loss for our team, I have no doubt his multidisciplinary talent and adaptability will make him an great asset in his new career. Any client or team that works with him will gain a creative and rigurous professional."
 
