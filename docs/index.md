@@ -39,7 +39,7 @@ canonical_url: https://www.danielpanea.com/
 
 <div class="profile-image-grid" markdown>
 
-![Daniel Panea, Data Scientist & AI Engineer](assets/@danielpanea.jpeg){ .profile-image alt="Portrait of Daniel Panea, Data Scientist & AI Engineer" }
+![Daniel Panea, Data Scientist & AI Engineer](assets/danielpanea.jpeg){ .profile-image alt="Portrait of Daniel Panea, Data Scientist & AI Engineer" }
 
 </div>
 
@@ -96,6 +96,18 @@ Here's what sets me apart and how I can help drive value for your business:
 
     "Professional, smart and friendly. Daniel delivers outstanding work, and has a solid grasp of technical domains. We value his work, and hope to continue engaging with him in future."
 
+-   :material-format-quote-open:{ .lg .middle } ![Juan Trujillo Sevilla](assets/juan.jpeg){ .testimonial-author-image } Juan Trujillo Sevilla
+    
+    Chief Optical Engineer at Wooptix
+
+    ---
+
+    "It has been a privilege to have Daniel on our team these past two years. From day one, he proved himself an exceptional professional, not only by excelling in every task assigned to him, whether programming, optical simulation, or lab work, but also through his constant drive to improve our projects. His unique blend of theoretical training as a physicist, practical skills, and meticulous attention to detail make him a reliable teammate.
+
+    Beyond his technical abilities, Daniel consistently brought a commitment to quality, even when challenges pushed him outside his comfort zone. While his departure is a loss for our team, I have no doubt his multidisciplinary talent and adaptability will make him an great asset in his new career. Any client or team that works with him will gain a creative and rigurous professional."
+
+        
+
 -    :material-format-quote-open:{ .lg .middle } ![Kiril Ivanov Kurtev](assets/kiril.jpeg){ .testimonial-author-image } Kiril Ivanov Kurtev
     
     Tech Lead at Wooptix
@@ -144,7 +156,7 @@ Monitor, maintain, and improve your systems for long-term value.
 
     ---
     
-    Want to see if we're a match? Let's have a chat and find out. Schedule a free 45-minute strategy session to discuss your AI challenges and explore how we can work together, or send me a message: [me@danielpanea.com](mailto:me@danielpanea.com).
+    Want to see if we're a match? Let's have a chat and find out. Schedule a free 45-minute strategy session to discuss your AI challenges and explore how we can work together, or send me a message: [medanielpanea.com](mailto:medanielpanea.com).
 
     [Book Free Intro Call :material-arrow-top-right:](https://calendly.com/daniel-panea/discovery-call){ .md-button .md-button--primary }
 
