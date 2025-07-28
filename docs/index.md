@@ -84,7 +84,7 @@ Here's what sets me apart and how I can help drive value for your business:
     I don’t chase buzzwords, I build solutions that solve real problems. Every system I design is grounded in practical impact, measurable outcomes, and maintainability.
 
 </div>
-## What my past clients say about my work
+## What my past clients and colleagues say about my work
 
 <div class="grid cards testimonials" markdown>
 
