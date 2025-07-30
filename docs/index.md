@@ -156,7 +156,7 @@ Monitor, maintain, and improve your systems for long-term value.
 
     ---
     
-    Want to see if we're a match? Let's have a chat and find out. Schedule a free 45-minute strategy session to discuss your AI challenges and explore how we can work together, or send me a message: [medanielpanea.com](mailto:medanielpanea.com).
+    Want to see if we're a match? Let's have a chat and find out. Schedule a free 45-minute strategy session to discuss your AI challenges and explore how we can work together, or send me a message: [me@danielpanea.com](mailto:me@danielpanea.com).
 
     [Book Free Intro Call :material-arrow-top-right:](https://calendly.com/daniel-panea/discovery-call){ .md-button .md-button--primary }
 
