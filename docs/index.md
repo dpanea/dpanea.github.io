@@ -125,19 +125,19 @@ Here's what sets me apart and how I can help drive value for your business:
 
 ## Here's how I can help you get started
 
-### 🔍 AI Opportunity Audit
+**:material-magnify:{ .lg .middle } AI Opportunity Audit**  
 Map out which processes you can automate and how AI can create real value in your business.
 
-### ⚙️ Custom Solution Design
+**:material-cog:{ .lg .middle } Custom Solution Design**  
 Develop AI systems tailored to your data, your infrastructure, and your use case.
 
-### 🚀 LLM Integrations & Workflow Automation
+**:material-rocket-launch:{ .lg .middle } LLM Integrations & Workflow Automation**  
 Embed AI into your internal workflows using open-source models, custom pipelines, and clean APIs.
 
-### 🔒 On-Prem & Open-Source Implementations
+**:material-shield-lock:{ .lg .middle } On-Prem & Open-Source Implementations**  
 Keep your data secure and avoid vendor lock-in by deploying solutions you fully own and control.
 
-### 📈 Ongoing Support & Optimization
+**:material-trending-up:{ .lg .middle } Ongoing Support & Optimization**  
 Monitor, maintain, and improve your systems for long-term value.
 
 ## Tools & Technologies I Work With
