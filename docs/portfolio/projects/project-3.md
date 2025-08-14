@@ -1,13 +1,14 @@
 ---
 title: Custom ML Algorithms and Physics-Based Navigation Models
 description: Enhancing AI-Driven Navigation with Sensor Fusion and Time-Series Intelligence
+icon: material/compass-outline
 ---
 
 <div class="project-hero-layout" markdown>
 
 <div class="project-content" markdown>
 
-# Custom ML Algorithms and Physics-Based Models
+# Custom ML Algorithms and Physics-Based Navigation Models
 ## Enhancing AI-Driven Navigation with Sensor Fusion and Time-Series Intelligence
 
 !!! abstract "Case Study Summary"

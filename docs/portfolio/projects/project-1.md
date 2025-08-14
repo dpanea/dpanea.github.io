@@ -1,7 +1,7 @@
 ---
 title: AI for Education 
 description: Enhancing Student Feedback and Teacher Workflows through Intelligent Automation
-
+icon: material/school
 ---
 
 <div class="project-hero-layout" markdown>

@@ -1,11 +1,12 @@
 ---
-title: Case Studies
+title: Case Studies Overview
 description: Daniel Panea's portfolio and case studies
+# icon: material/briefcase-outline
 ---
 
-# Featured Projects
+# Overview
 
-Welcome to my portfolio of data science and AI projects. Each project demonstrates my expertise in delivering impactful solutions to real-world business challenges.
+Welcome to my portfolio of data science and AI projects. Each project demonstrates my expertise in delivering impactful solutions to real-world business challenges. Click on any project to see more details.
 
 <div class="grid cards" markdown>
 
@@ -35,7 +36,7 @@ Welcome to my portfolio of data science and AI projects. Each project demonstrat
 
 -   ![Custom ML Algorithms](../assets/navigation-systems.jpg){ align=left width="200" }
     
-    [Custom ML Algorithms and Physics-Based Models](projects/project-3.md)
+    [Custom ML Algorithms and Physics-Based Navigation Models](projects/project-3.md)
 
     ---
 

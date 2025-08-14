@@ -23,16 +23,13 @@ markdown_extensions:
 
 
 nav:
-  - Home:
-    - About: index.md
-  - Case Studies:
-    - Overview: portfolio/index.md
-    - Projects:
-      - portfolio/projects/project-1.md
-      - portfolio/projects/project-2.md
-      - portfolio/projects/project-3.md
-  # - Blog:
-  #   - blog/index.md 
+  - Home: index.md
+  - Case Studies: 
+    - portfolio/index.md
+    - portfolio/projects/project-1.md
+    - portfolio/projects/project-2.md
+    - portfolio/projects/project-3.md
+
 
 theme:
   name: material

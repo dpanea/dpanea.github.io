@@ -1,6 +1,7 @@
 ---
 title: Synthetic Data for Model Validation
 description: Privacy-Compliant AI Testing through Realistic Data Simulation
+icon: material/test-tube
 ---
 
 <div class="project-hero-layout" markdown>
