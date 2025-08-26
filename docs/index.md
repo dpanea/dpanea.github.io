@@ -3,7 +3,7 @@ title: About Me
 description: Explore AI and intelligent automations with Daniel Panea
 keywords: Daniel Panea, AI Engineer, Artificial Intelligence, Machine Learning, Automation, Agents, AI Workflow, AI entrepreneur
 author: Daniel Panea
-canonical_url: https://www.danielpanea.com/
+canonical_url: https://danielpanea.com/
 icon: material/home
 ---
 
@@ -12,7 +12,7 @@ icon: material/home
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Daniel Panea",
-  "url": "https://www.danielpanea.com/
+  "url": "https://danielpanea.com/
 }
 </script>
 

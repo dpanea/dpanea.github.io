@@ -1,6 +1,6 @@
 site_name: Daniel Panea
 site_description: Explore AI and intelligent automations with Daniel Panea
-site_url: https://www.danielpanea.com
+site_url: https://danielpanea.com
 
 markdown_extensions:
   - attr_list
@@ -87,6 +87,7 @@ extra_css:
   - stylesheets/hero.css
 plugins:
   - search
+  - awesome-pages
   - social:
       cards_layout_options:
         background_color: "#111111"
