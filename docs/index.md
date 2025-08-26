@@ -12,7 +12,7 @@ icon: material/home
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Daniel Panea",
-  "url": "https://danielpanea.com/
+  "url": "https://danielpanea.com/"
 }
 </script>
 
