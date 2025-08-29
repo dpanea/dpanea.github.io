@@ -89,6 +89,23 @@ Here's what sets me apart and how I can help drive value for your business:
 
 <div class="grid cards testimonials" markdown>
 
+-   :material-format-quote-open:{ .lg .middle } ![Armin Pfauser](assets/armin.jpeg){ .testimonial-author-image } Armin Pfauser
+    
+    CEO and founder at digitflow GmbH
+
+    ---
+
+    "Daniel delivered exceptional good work. He is very intelligent and knows what he is talking about. I can only recommend working with him. "
+
+
+-   :material-format-quote-open:{ .lg .middle } ![James Smith](assets/james.jpeg){ .testimonial-author-image } James Smith
+    
+    Founder at Mark My Words
+
+    ---
+
+    "Daniel is a brilliant freelancer. Hardworking, smart, creative and personable. I could not recommend him more."
+
 -   :material-format-quote-open:{ .lg .middle } ![Chris Cooper](assets/chris.jpeg){ .testimonial-author-image } Chris Cooper
     
     Founder at NeoMatrix
@@ -105,7 +122,7 @@ Here's what sets me apart and how I can help drive value for your business:
 
     "It has been a privilege to have Daniel on our team these past two years. From day one, he proved himself an exceptional professional, not only by excelling in every task assigned to him, but also through his constant drive to improve our projects. His unique blend of theoretical training as a physicist, practical skills, and meticulous attention to detail make him a reliable teammate.
 
-    Beyond his technical abilities, Daniel consistently brought a commitment to quality, even when challenges pushed him outside his comfort zone. While his departure is a loss for our team, I have no doubt his multidisciplinary talent and adaptability will make him an great asset in his new career. Any client or team that works with him will gain a creative and rigurous professional."
+    Beyond his technical abilities, Daniel consistently brought a commitment to quality, even when challenges pushed him outside his comfort zone. While his departure is a loss for our team, I have no doubt his multidisciplinary talent and adaptability will make him an great asset in his new career. Any client or team that works with him will gain a creative and rigorous professional."
 
         
 
@@ -115,7 +132,7 @@ Here's what sets me apart and how I can help drive value for your business:
 
     ---
 
-    "I had the pleasure of working with Daniel for two years at Wootpix. During this time, I was consistently impressed by his dedication, professionalism, and ability to quickly develop effective solutions to complex problems.
+    "I had the pleasure of working with Daniel for two years at Wooptix. During this time, I was consistently impressed by his dedication, professionalism, and ability to quickly develop effective solutions to complex problems.
 
     Daniel has strong expertise in Python and an excellent understanding of mathematical modeling, which he applies with precision to deliver high-quality results. He is a highly skilled professional and a valuable team player.
 
