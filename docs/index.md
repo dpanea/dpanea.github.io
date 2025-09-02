@@ -95,7 +95,7 @@ Here's what sets me apart and how I can help drive value for your business:
 
     ---
 
-    "Daniel delivered exceptional good work. He is very intelligent and knows what he is talking about. I can only recommend working with him. "
+    "Daniel is helping us as a freelancer to build AI and machine learning solutions for our clients. He is delivering exceptionally good work. He is very intelligent and knows what he is talking about. I can only recommend working with him."
 
 
 -   :material-format-quote-open:{ .lg .middle } ![James Smith](assets/james.jpeg){ .testimonial-author-image } James Smith
