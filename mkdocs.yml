@@ -63,7 +63,7 @@ theme:
   # icon:
   #   logo: mylogo
   logo: assets/mylogo_cropped.png
-  favicon: assets/mylogo.svg
+  favicon: assets/favicon.png
 
 extra:
   generator: true

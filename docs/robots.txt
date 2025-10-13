@@ -12,7 +12,6 @@ Disallow: /search/
 Disallow: /search.html
 
 # Prevent access to specific directories (adjust as needed)
-Disallow: /assets/
 Disallow: /javascripts/
 Disallow: /stylesheets/
 
@@ -29,4 +28,4 @@ Disallow: /
 User-agent: curl
 Disallow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://danielpanea.com/sitemap.xml

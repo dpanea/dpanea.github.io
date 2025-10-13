@@ -1,23 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://danielpanea.com/</loc>
-         <lastmod>2025-08-26</lastmod>
+        <loc>https://danielpanea.com/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
     </url>
     <url>
-         <loc>https://danielpanea.com/portfolio/</loc>
-         <lastmod>2025-08-26</lastmod>
+        <loc>https://danielpanea.com/portfolio/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/"/>
     </url>
     <url>
-         <loc>https://danielpanea.com/portfolio/projects/project-1/</loc>
-         <lastmod>2025-08-26</lastmod>
+        <loc>https://danielpanea.com/portfolio/projects/project-1/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-1/"/>
     </url>
     <url>
-         <loc>https://danielpanea.com/portfolio/projects/project-2/</loc>
-         <lastmod>2025-08-26</lastmod>
+        <loc>https://danielpanea.com/portfolio/projects/project-2/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-2/"/>
     </url>
     <url>
-         <loc>https://danielpanea.com/portfolio/projects/project-3/</loc>
-         <lastmod>2025-08-26</lastmod>
+        <loc>https://danielpanea.com/portfolio/projects/project-3/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-3/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/es/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/es/portfolio/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/es/portfolio/projects/project-1/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-1/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/es/portfolio/projects/project-2/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-2/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/es/portfolio/projects/project-3/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-3/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/de/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/de/portfolio/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/de/portfolio/projects/project-1/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-1/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-1/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/de/portfolio/projects/project-2/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-2/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-2/"/>
+    </url>
+    <url>
+        <loc>https://danielpanea.com/de/portfolio/projects/project-3/</loc>
+        <lastmod>2025-10-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/portfolio/projects/project-3/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/portfolio/projects/project-3/"/>
     </url>
 </urlset>
