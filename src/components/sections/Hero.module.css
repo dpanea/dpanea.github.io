@@ -1,0 +1,156 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Background */
+.background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--bg-primary);
+    opacity: 0.85;
+    background: url('/images/hero-conference.jpg') center/cover no-repeat;
+}
+
+.gradient {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.1), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.1), transparent),
+        linear-gradient(180deg, rgba(9, 9, 11, 0.5) 0%, var(--bg-primary) 100%);
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-32) var(--section-padding-x) var(--space-16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textContent {
+    max-width: 900px;
+}
+
+/* Eyebrow */
+.eyebrow {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    margin-bottom: var(--space-6);
+}
+
+/* Headline */
+.headline {
+    font-size: var(--text-hero);
+    font-weight: 800;
+    line-height: var(--leading-none);
+    letter-spacing: var(--tracking-tighter);
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+}
+
+.highlight {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.secondLine {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+/* Subheadline */
+.subheadline {
+    font-size: var(--text-xl);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    max-width: 700px;
+    margin: 0 auto var(--space-10);
+}
+
+/* CTAs */
+.ctas {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+@media (min-width: 640px) {
+    .ctas {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Tertiary Link */
+.tertiaryLink {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.tertiaryLink:hover {
+    color: var(--accent-primary);
+}
+
+/* Scroll Indicator */
+.scrollIndicator {
+    position: absolute;
+    bottom: var(--space-8);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.scrollText {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+}
+
+.scrollLine {
+    width: 1px;
+    height: 40px;
+    background: var(--border-default);
+    position: relative;
+    overflow: hidden;
+}
+
+.scrollDot {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 5px;
+    height: 8px;
+    background: var(--accent-primary);
+    border-radius: var(--radius-full);
+}

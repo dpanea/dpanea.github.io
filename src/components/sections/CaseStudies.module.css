@@ -1,0 +1,156 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    height: 100%;
+}
+
+.title {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-1);
+}
+
+.subtitle {
+    font-size: var(--text-sm);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+}
+
+.section {
+    margin-bottom: var(--space-5);
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    margin-bottom: var(--space-2);
+}
+
+.text {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+.impactList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.impactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.checkmark {
+    color: var(--success);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Video Section */
+.videoSection {
+    margin-top: var(--space-6);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.videoThumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--border-subtle);
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1b1e;
+    background-image: url('/images/keynote-thumbnail.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.videoThumbnail:hover .thumbnailImage {
+    transform: scale(1.05);
+}
+
+.videoOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    transition: background 0.3s ease;
+}
+
+.videoThumbnail:hover .videoOverlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.playButton {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--highlight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.playButton svg {
+    margin-left: 2px;
+    /* Visual centering adjustment for play triangle */
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
+.videoThumbnail:hover .playButton {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.watchText {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}

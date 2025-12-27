@@ -1,0 +1,100 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Variants */
+.primary {
+    background: var(--accent-gradient);
+    color: var(--text-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md), 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+.primary:hover {
+    background: var(--accent-gradient-hover);
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.secondary {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+}
+
+.secondary:hover {
+    background: var(--bg-hover);
+    border-color: var(--border-hover);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    border-radius: var(--radius-md);
+}
+
+.ghost:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+}
+
+.outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+}
+
+.outline:hover {
+    background: var(--bg-elevated);
+    border-color: var(--accent-primary);
+}
+
+/* Sizes */
+.sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    min-height: 36px;
+}
+
+.md {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+    min-height: 44px;
+}
+
+.lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+    min-height: 52px;
+}
+
+/* Full Width */
+.fullWidth {
+    width: 100%;
+}
+
+/* Icon */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: inline-flex;
+    align-items: center;
+}

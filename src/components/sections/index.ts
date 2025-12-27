@@ -1,0 +1,9 @@
+export { Hero } from './Hero';
+export { TrustBar } from './TrustBar';
+export { ValueProposition } from './ValueProposition';
+export { Process } from './Process';
+export { CaseStudies } from './CaseStudies';
+export { Testimonials } from './Testimonials';
+export { LeadMagnet } from './LeadMagnet';
+export { About } from './About';
+export { Footer } from './Footer';

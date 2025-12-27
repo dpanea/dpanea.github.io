@@ -1,0 +1,77 @@
+.main {
+    min-height: 100vh;
+    padding: var(--space-32) 0 var(--space-16);
+    background: var(--bg-primary);
+}
+
+.container {
+    max-width: var(--container-text);
+    margin: 0 auto;
+    padding: 0 var(--section-padding-x);
+}
+
+.backLink {
+    display: inline-block;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-bottom: var(--space-8);
+    transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+    color: var(--accent-primary);
+}
+
+.title {
+    font-size: var(--text-5xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.subtitle {
+    font-size: var(--text-lg);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-12);
+}
+
+.section {
+    margin-bottom: var(--space-10);
+}
+
+.section h2 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+}
+
+.section p {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.section a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.section a:hover {
+    color: var(--accent-primary-hover);
+    text-decoration: underline;
+}
+
+.address {
+    font-style: normal;
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}

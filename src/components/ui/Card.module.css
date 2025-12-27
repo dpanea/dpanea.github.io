@@ -1,0 +1,54 @@
+.card {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+/* Variants */
+.default {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+}
+
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+}
+
+.elevated {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-lg);
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid var(--border-default);
+}
+
+/* Hover effect */
+.hoverable:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-xl);
+}
+
+.hoverable.glass:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Card parts */
+.header {
+    padding: var(--space-6);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.content {
+    padding: var(--space-6);
+}
+
+.footer {
+    padding: var(--space-6);
+    border-top: 1px solid var(--border-subtle);
+}

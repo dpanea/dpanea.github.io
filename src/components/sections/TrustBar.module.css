@@ -1,0 +1,107 @@
+.trustBar {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: var(--space-6) 0;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--section-padding-x);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+@media (min-width: 1024px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--space-8);
+    }
+}
+
+/* Credentials */
+.credentials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+}
+
+/* Tech Stack */
+.techStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+    .techStack {
+        flex-direction: row;
+    }
+}
+
+.label {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+}
+
+.techList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+}
+
+.tech {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.techIcon {
+    font-size: var(--text-base);
+}
+
+.techName {
+    font-weight: 500;
+}
+
+/* Divider */
+.divider {
+    display: none;
+    width: 1px;
+    height: 32px;
+    background: var(--border-default);
+}
+
+@media (min-width: 1024px) {
+    .divider {
+        display: block;
+    }
+}
+
+/* Partner */
+.partner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.partnerName {
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--text-primary);
+}
