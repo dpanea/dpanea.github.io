@@ -30,7 +30,7 @@ export default function Privacy() {
                         <strong>Daniel Panea</strong><br />
                         AI Engineering & Consulting<br />
                         Canary Islands, Spain<br />
-                        Email: hello@danielpanea.com
+                        Email: me@danielpanea.com
                     </p>
                 </section>
 
@@ -93,7 +93,7 @@ export default function Privacy() {
                         <li><strong>Right to object:</strong> Object to processing of your data</li>
                     </ul>
                     <p>
-                        To exercise any of these rights, please contact me at hello@danielpanea.com.
+                        To exercise any of these rights, please contact me at me@danielpanea.com.
                     </p>
                 </section>
 
@@ -134,7 +134,7 @@ export default function Privacy() {
                     <h2>10. Contact</h2>
                     <p>
                         If you have any questions about this privacy policy or your personal data,
-                        please contact me at hello@danielpanea.com.
+                        please contact me at me@danielpanea.com.
                     </p>
                 </section>
             </div>

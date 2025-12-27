@@ -79,7 +79,7 @@ export default function RootLayout({
               description: "Sovereign AI Engineering for European Enterprises",
               url: "https://danielpanea.com",
               sameAs: [
-                "https://linkedin.com/in/danielpanea",
+                "https://www.linkedin.com/in/daniel-panea-lichtig",
               ],
               knowsAbout: [
                 "Artificial Intelligence",

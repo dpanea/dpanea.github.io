@@ -22,11 +22,10 @@ export default function Impressum() {
                         AI Engineering & Consulting<br />
                         <br />
                         {/* TODO: Add your actual address */}
-                        [Your Street Address]<br />
-                        [Postal Code] [City]<br />
+                        Santa Cruz de Tenerife<br />
                         Canary Islands, Spain<br />
                         <br />
-                        Email: <a href="mailto:hello@danielpanea.com">hello@danielpanea.com</a>
+                        Email: <a href="mailto:me@danielpanea.com">me@danielpanea.com</a>
                     </address>
                 </section>
 
@@ -34,8 +33,8 @@ export default function Impressum() {
                     <h2>Business Information</h2>
                     <p>
                         {/* TODO: Add your actual business registration details */}
-                        <strong>Tax ID (NIF):</strong> [Your NIF Number]<br />
-                        <strong>VAT ID:</strong> [Your VAT Number if applicable]
+                        <strong>Tax ID (NIF):</strong> 77751987G<br />
+                        {/*<strong>VAT ID:</strong> [Your VAT Number if applicable]*/}
                     </p>
                 </section>
 

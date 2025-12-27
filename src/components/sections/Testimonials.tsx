@@ -8,26 +8,40 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
     {
-        quote: "Daniel brings a level of engineering rigor we rarely see in freelancers. He didn't just build a model; he architected a secure system that passed our strict compliance audits.",
-        name: 'Thomas Müller',
-        role: 'CTO',
-        company: 'Enterprise Client',
-        image: null, // Placeholder - will need real image
+        quote: "Daniel is helping us as a freelancer to build AI and machine learning solutions for our clients. He is delivering exceptionally good work. He is very intelligent and knows what he is talking about.",
+        name: 'Armin Pfauser',
+        role: 'CEO & Founder',
+        company: 'DigitFlow GmbH',
+        image: '/images/armin.jpeg',
     },
     {
-        quote: "Working with Daniel is like having a partner, not a vendor. His scientific approach to AI gave us the confidence to deploy to production without hesitation.",
-        name: 'Sarah Schmidt',
+        quote: "Daniel is a brilliant freelancer. Hardworking, smart, creative and personable. I could not recommend him more.",
+        name: 'James Smith',
         role: 'Founder',
-        company: 'Tech Startup',
-        image: null,
+        company: 'Mark My Words',
+        image: '/images/james.jpeg',
     },
     {
-        quote: "The transition from cloud APIs to our own infrastructure seemed impossible until Daniel showed us the path. Now we have complete control over our AI capabilities.",
-        name: 'Michael Weber',
-        role: 'Innovation Manager',
-        company: 'German SME',
-        image: null,
+        quote: "Professional, smart and friendly. Daniel delivers outstanding work, and has a solid grasp of technical domains. We value his work, and hope to continue engaging with him in future.",
+        name: 'Chris Cooper',
+        role: 'Founder',
+        company: 'NeoMatrix',
+        image: '/images/chris.jpeg',
     },
+    {
+        quote: "It has been a privilege to have Daniel on our team. From day one, he proved himself an exceptional professional, excelling in every task and constantly improving our projects.",
+        name: 'Juan Trujillo Sevilla',
+        role: 'Chief Optical Engineer',
+        company: 'Wooptix',
+        image: '/images/juan.jpeg',
+    },
+    {
+        quote: "I was consistently impressed by his dedication, professionalism, and ability to quickly develop effective solutions to complex problems. A highly skilled professional and valuable team player.",
+        name: 'Kiril Ivanov Kurtev',
+        role: 'Tech Lead',
+        company: 'Wooptix',
+        image: '/images/kiril.jpeg',
+    }
 ];
 
 export function Testimonials() {
@@ -40,7 +54,7 @@ export function Testimonials() {
         <Section background="secondary">
             <SectionHeader
                 title="Trusted by Leaders"
-                subtitle="What clients say about working with me."
+                subtitle="What past clients say about my work."
             />
 
             <motion.div
@@ -64,7 +78,11 @@ export function Testimonials() {
                                 </blockquote>
                                 <div className={styles.author}>
                                     <div className={styles.avatar}>
-                                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                                        {testimonial.image ? (
+                                            <img src={testimonial.image} alt={testimonial.name} />
+                                        ) : (
+                                            testimonial.name.split(' ').map(n => n[0]).join('')
+                                        )}
                                     </div>
                                     <div className={styles.authorInfo}>
                                         <span className={styles.name}>{testimonial.name}</span>

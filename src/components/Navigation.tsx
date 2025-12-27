@@ -43,7 +43,7 @@ export function Navigation() {
         >
             <nav className={styles.nav}>
                 <a href="/" className={styles.logo}>
-                    <img src="/images/logo.svg" alt="Daniel Panea" className={styles.logoImage} />
+                    <img src="/images/logo.png" alt="Daniel Panea" className={styles.logoImage} />
                 </a>
 
                 {/* Desktop Navigation */}
@@ -64,7 +64,7 @@ export function Navigation() {
                     <Button
                         variant="primary"
                         size="sm"
-                        href="https://calendly.com"
+                        href="https://calendly.com/daniel-panea/discovery-call"
                     >
                         Book a Call
                     </Button>

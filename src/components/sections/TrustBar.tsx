@@ -6,10 +6,13 @@ import { Badge } from '../ui/Badge';
 import styles from './TrustBar.module.css';
 
 const techStack = [
-    { name: 'PyTorch', icon: '🔥' },
-    { name: 'Mistral AI', icon: '🌬️' },
-    { name: 'Meta Llama', icon: '🦙' },
+    { name: 'Python', icon: '🐍' },
+    { name: 'vLLM', icon: '🚀' },
+    { name: 'FastAPI', icon: '⚡' },
+    { name: 'PostgreSQL', icon: '🐘' },
+    { name: 'Docker', icon: '🐳' },
     { name: 'HuggingFace', icon: '🤗' },
+    { name: 'PyTorch', icon: '🔥' },
 ];
 
 export function TrustBar() {
@@ -61,7 +64,14 @@ export function TrustBar() {
                     {/* Partner */}
                     <div className={styles.partner}>
                         <span className={styles.label}>Strategic Partner:</span>
-                        <span className={styles.partnerName}>DigitFlow</span>
+                        <a
+                            href="https://digitflow.eu/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.partnerLink}
+                        >
+                            <img src="/images/digitflow-logo.svg" alt="DigitFlow" className={styles.partnerLogo} />
+                        </a>
                     </div>
                 </motion.div>
             </div>

@@ -19,7 +19,7 @@ export function Footer() {
                         <Button
                             variant="primary"
                             size="lg"
-                            href="https://calendly.com"
+                            href="https://calendly.com/daniel-panea/discovery-call"
                             icon={
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -53,10 +53,10 @@ export function Footer() {
                     <div className={styles.links}>
                         <div className={styles.linkGroup}>
                             <h4 className={styles.linkTitle}>Connect</h4>
-                            <a href="https://linkedin.com" className={styles.link} target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/daniel-panea-lichtig" className={styles.link} target="_blank" rel="noopener noreferrer">
                                 LinkedIn
                             </a>
-                            <a href="mailto:hello@danielpanea.com" className={styles.link}>
+                            <a href="mailto:me@danielpanea.com" className={styles.link}>
                                 Email
                             </a>
                         </div>

@@ -12,9 +12,9 @@ import styles from './CaseStudies.module.css';
 
 const caseStudies = [
     {
-        tag: 'Conference Project',
+        tag: 'Conference Keynote',
         title: 'The Future of AI',
-        subtitle: 'Spanish National AI Conference Keynote',
+        subtitle: 'Spanish National AI Conference',
         challenge: 'Deliver a compelling, technically rigorous presentation on sovereign AI that resonates with both technical and business audiences.',
         solution: 'Developed a comprehensive framework demonstrating the practical transition from API-dependent solutions to self-hosted infrastructure.',
         impact: [
@@ -22,21 +22,52 @@ const caseStudies = [
             'Multiple enterprise consultation requests',
             'Framework now used as reference architecture',
         ],
+        image: '/images/keynote-thumbnail.jpg',
         hasVideo: true,
     },
     {
-        tag: 'Enterprise Partnership',
-        title: 'DigitFlow Collaboration',
-        subtitle: 'Technical Lead & AI Architecture',
-        challenge: 'Scale AI-powered document processing while maintaining strict German data privacy compliance.',
-        solution: 'Architected a fully on-premise solution using fine-tuned open-source models, eliminating external API dependencies.',
+        tag: 'Public Sector & Enterprise',
+        title: 'IT Service Management',
+        subtitle: 'On-Premise AI & OCR Strategic Ticket Analysis',
+        challenge: 'Transform a chaotic backlog of mixed-media support tickets into actionable strategy while strictly adhering to data sovereignty requirements (no cloud).',
+        solution: 'Built a secure, local open-source pipeline using OCR and LLMs (Gemma) to digest attachments and cluster issues for automated root-cause discovery.',
         impact: [
-            '100% data sovereignty achieved',
-            '60% cost reduction vs. cloud APIs',
-            'Passed BSI security audit',
+            '100% Data Sovereignty (On-prem)',
+            'Deep root-cause visibility',
+            'Enabled "Shift-Left" automation',
         ],
+        image: '/images/itsm_dashboard_horizontal.jpg',
         hasVideo: false,
     },
+    {
+        tag: 'Education Tech',
+        title: 'AI for Education',
+        subtitle: 'Real-time Student Feedback',
+        challenge: 'Provide scalable, personalized feedback on student writing without overworking educators.',
+        solution: 'Integrated RAG models and fine-tuned LLMs with asynchronous backend pipelines to deliver instant insights.',
+        impact: [
+            'Real-time personalized insights',
+            'Scalable async backend',
+            'Context-rich automation',
+        ],
+        image: '/images/eduaction_horizontal.jpg',
+        hasVideo: false,
+    },
+    {
+        tag: 'Privacy Tech',
+        title: 'Synthetic Data Engine',
+        subtitle: 'Privacy-First Model Validation',
+        challenge: 'Validate AI models without exposing sensitive user data, ensuring full GDPR compliance.',
+        solution: 'Built a privacy-first engine combining LLMs, probabilistic modeling, and rule-based simulation.',
+        impact: [
+            'Zero sensitive data exposure',
+            'Realistic user emulation',
+            'Full GDPR compliance',
+        ],
+        image: '/images/synthetic_data_horizontal.jpg',
+        hasVideo: false,
+    },
+
 ];
 
 export function CaseStudies() {
@@ -95,29 +126,35 @@ export function CaseStudies() {
                                     </ul>
                                 </div>
 
-                                {study.hasVideo && (
+                                {(study.hasVideo || study.image) && (
                                     <div className={styles.videoSection}>
                                         <div
                                             className={styles.videoThumbnail}
-                                            onClick={() => setIsVideoOpen(true)}
-                                            role="button"
-                                            tabIndex={0}
-                                            aria-label="Play Keynote Video"
+                                            onClick={() => study.hasVideo && setIsVideoOpen(true)}
+                                            style={{ cursor: study.hasVideo ? 'pointer' : 'default' }}
+                                            role={study.hasVideo ? "button" : undefined}
+                                            tabIndex={study.hasVideo ? 0 : undefined}
+                                            aria-label={study.hasVideo ? "Play Keynote Video" : undefined}
                                             onKeyDown={(e) => {
-                                                if (e.key === 'Enter' || e.key === ' ') {
+                                                if (study.hasVideo && (e.key === 'Enter' || e.key === ' ')) {
                                                     setIsVideoOpen(true);
                                                 }
                                             }}
                                         >
-                                            <div className={styles.thumbnailImage} />
-                                            <div className={styles.videoOverlay}>
-                                                <div className={styles.playButton}>
-                                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                                        <path d="M8 5v14l11-7z" />
-                                                    </svg>
+                                            <div
+                                                className={styles.thumbnailImage}
+                                                style={{ backgroundImage: `url(${study.image})` }}
+                                            />
+                                            {study.hasVideo && (
+                                                <div className={styles.videoOverlay}>
+                                                    <div className={styles.playButton}>
+                                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                                            <path d="M8 5v14l11-7z" />
+                                                        </svg>
+                                                    </div>
+                                                    <span className={styles.watchText}>Watch Keynote</span>
                                                 </div>
-                                                <span className={styles.watchText}>Watch Keynote</span>
-                                            </div>
+                                            )}
                                         </div>
                                     </div>
                                 )}

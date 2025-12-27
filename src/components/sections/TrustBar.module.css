@@ -105,3 +105,11 @@
     font-weight: 600;
     color: var(--text-primary);
 }
+
+.partnerLogo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    /* Ensure visibility on dark backgrounds if the logo is dark text */
+    /* filter: brightness(0) invert(1); */
+}
