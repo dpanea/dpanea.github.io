@@ -33,7 +33,9 @@ export function TrustBar() {
                     {/* Credentials */}
                     <div className={styles.credentials}>
                         <Badge variant="accent" icon="🎓">PhD Theoretical Physics</Badge>
-                        <Badge variant="success" icon="🛡️">Insured via Orus</Badge>
+                        <a href="https://www.orus.eu/assurance-rc-pro" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <Badge variant="success" icon="🛡️">Insured via Orus</Badge>
+                        </a>
                     </div>
 
                     {/* Divider */}

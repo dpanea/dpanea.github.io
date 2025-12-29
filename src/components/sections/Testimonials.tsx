@@ -71,7 +71,7 @@ export function Testimonials() {
                         transition={{ duration: 0.6, delay: 0.1 + index * 0.15 }}
                     >
                         <Card variant="glass" className={styles.card}>
-                            <CardContent>
+                            <CardContent className={styles.cardContent}>
                                 <div className={styles.quoteIcon}>&ldquo;</div>
                                 <blockquote className={styles.quote}>
                                     {testimonial.quote}

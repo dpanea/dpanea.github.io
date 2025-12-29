@@ -11,6 +11,7 @@ export function LeadMagnet() {
     const [email, setEmail] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [error, setError] = useState('');
 
     const { ref, inView } = useInView({
         threshold: 0.1,
@@ -20,13 +21,45 @@ export function LeadMagnet() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setError('');
 
-        // Simulate form submission - replace with actual endpoint
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        const API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
+        const FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
 
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setEmail('');
+        if (!API_KEY || !FORM_ID) {
+            setError('Configuration missing. Please check console.');
+            console.error('Missing env vars:', { API_KEY: !!API_KEY, FORM_ID: !!FORM_ID });
+            setIsSubmitting(false);
+            return;
+        }
+
+        try {
+            const response = await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    api_key: API_KEY,
+                    email: email,
+                }),
+            });
+
+            const data = await response.json();
+            console.log('Kit API Response:', data);
+
+            if (!response.ok) {
+                throw new Error(data.message || 'Subscription failed');
+            }
+
+            setIsSubmitted(true);
+            setEmail('');
+        } catch (err: any) {
+            console.error('Submission error:', err);
+            setError(err.message || 'Failed to subscribe. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -80,6 +113,7 @@ export function LeadMagnet() {
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className={styles.form}>
+                                {error && <p style={{ color: 'red', marginBottom: '1rem' }}>{error}</p>}
                                 <div className={styles.inputWrapper}>
                                     <input
                                         type="email"

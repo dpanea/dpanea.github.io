@@ -28,7 +28,15 @@ const caseStudies = [
     {
         tag: 'Public Sector & Enterprise',
         title: 'IT Service Management',
-        subtitle: 'On-Premise AI & OCR Strategic Ticket Analysis',
+        subtitle: (
+            <span>
+                In collaboration with{' '}
+                <a href="https://digitflow-verenburg.de/" target="_blank" rel="noopener noreferrer" className="hover:underline text-accent-primary">
+                    Digitflow
+                </a>
+                . Now available as a product package.
+            </span>
+        ) as any,
         challenge: 'Transform a chaotic backlog of mixed-media support tickets into actionable strategy while strictly adhering to data sovereignty requirements (no cloud).',
         solution: 'Built a secure, local open-source pipeline using OCR and LLMs (Gemma) to digest attachments and cluster issues for automated root-cause discovery.',
         impact: [
@@ -41,7 +49,11 @@ const caseStudies = [
     },
     {
         tag: 'Education Tech',
-        title: 'AI for Education',
+        title: (
+            <a href="https://markmywords.au/" target="_blank" rel="noopener noreferrer" className="hover:underline decoration-accent-primary decoration-2 underline-offset-4">
+                Mark My Words
+            </a>
+        ) as any,
         subtitle: 'Real-time Student Feedback',
         challenge: 'Provide scalable, personalized feedback on student writing without overworking educators.',
         solution: 'Integrated RAG models and fine-tuned LLMs with asynchronous backend pipelines to deliver instant insights.',
@@ -169,7 +181,7 @@ export function CaseStudies() {
                 isOpen={isVideoOpen}
                 onClose={() => setIsVideoOpen(false)}
                 videoSrc="/videos/keynote.mp4"
-                title="The Future of AI — Conference Keynote"
+                title="The Future of AI - Conference Keynote"
             />
         </Section>
     );

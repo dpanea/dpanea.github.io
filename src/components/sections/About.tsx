@@ -32,7 +32,7 @@ export function About() {
                         </p>
                         <p className={styles.text}>
                             I apply the rigorous Scientific Method to business automation. My background
-                            in Theoretical Physics (PhD) trained me to model complex systems and demand
+                            in Theoretical Physics (PhD) and High Performance Computing (MSc) trained me to model complex systems and demand
                             mathematical predictability in everything I build.
                         </p>
                         <p className={styles.text}>
