@@ -88,13 +88,10 @@
 }
 
 .highlight {
-    font-style: italic;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    padding-right: 0.1em;
-    /* Prevent italic clip */
 }
 
 .secondLine {
