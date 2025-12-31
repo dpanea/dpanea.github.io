@@ -99,23 +99,62 @@ export function CaseStudies() {
 
             <motion.div
                 ref={ref}
-                className={styles.grid}
+                className={styles.list}
                 initial="hidden"
                 animate={inView ? 'visible' : 'hidden'}
             >
                 {caseStudies.map((study, index) => (
                     <motion.div
                         key={study.title}
-                        initial={{ opacity: 0, y: 30 }}
+                        className={styles.item}
+                        initial={{ opacity: 0, y: 50 }}
                         animate={inView ? { opacity: 1, y: 0 } : {}}
-                        transition={{ duration: 0.6, delay: 0.2 + index * 0.15 }}
+                        transition={{ duration: 0.8, delay: index * 0.2 }}
+                        data-reversed={index % 2 === 1}
                     >
-                        <Card variant="glass" className={styles.card}>
-                            <CardContent>
-                                <Badge variant="accent" size="sm">{study.tag}</Badge>
-                                <h3 className={styles.title}>{study.title}</h3>
-                                <p className={styles.subtitle}>{study.subtitle}</p>
+                        {/* Visual/Image Side */}
+                        <div className={styles.visualColumn}>
+                            {(study.hasVideo || study.image) && (
+                                <div
+                                    className={styles.videoThumbnail}
+                                    onClick={() => study.hasVideo && setIsVideoOpen(true)}
+                                    style={{ cursor: study.hasVideo ? 'pointer' : 'default' }}
+                                    role={study.hasVideo ? "button" : undefined}
+                                    tabIndex={study.hasVideo ? 0 : undefined}
+                                    aria-label={study.hasVideo ? "Play Keynote Video" : undefined}
+                                    onKeyDown={(e) => {
+                                        if (study.hasVideo && (e.key === 'Enter' || e.key === ' ')) {
+                                            setIsVideoOpen(true);
+                                        }
+                                    }}
+                                >
+                                    <div
+                                        className={styles.thumbnailImage}
+                                        style={{ backgroundImage: `url(${study.image})` }}
+                                    />
+                                    {study.hasVideo && (
+                                        <div className={styles.videoOverlay}>
+                                            <div className={styles.playButton}>
+                                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M8 5v14l11-7z" />
+                                                </svg>
+                                            </div>
+                                            <span className={styles.watchText}>Watch Keynote</span>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
 
+                        {/* Content Side */}
+                        <div className={styles.contentColumn}>
+                            <div className={styles.header}>
+                                <Badge variant="accent" size="sm" className={styles.badge}>{study.tag}</Badge>
+                                <h3 className={styles.title}>{study.title}</h3>
+                                <div className={styles.subtitle}>{study.subtitle}</div>
+                            </div>
+
+                            <div className={styles.body}>
                                 <div className={styles.section}>
                                     <span className={styles.label}>Challenge</span>
                                     <p className={styles.text}>{study.challenge}</p>
@@ -131,47 +170,14 @@ export function CaseStudies() {
                                     <ul className={styles.impactList}>
                                         {study.impact.map((item) => (
                                             <li key={item} className={styles.impactItem}>
-                                                <span className={styles.checkmark}>✓</span>
+                                                <span className={styles.checkmark}>—</span>
                                                 {item}
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
-
-                                {(study.hasVideo || study.image) && (
-                                    <div className={styles.videoSection}>
-                                        <div
-                                            className={styles.videoThumbnail}
-                                            onClick={() => study.hasVideo && setIsVideoOpen(true)}
-                                            style={{ cursor: study.hasVideo ? 'pointer' : 'default' }}
-                                            role={study.hasVideo ? "button" : undefined}
-                                            tabIndex={study.hasVideo ? 0 : undefined}
-                                            aria-label={study.hasVideo ? "Play Keynote Video" : undefined}
-                                            onKeyDown={(e) => {
-                                                if (study.hasVideo && (e.key === 'Enter' || e.key === ' ')) {
-                                                    setIsVideoOpen(true);
-                                                }
-                                            }}
-                                        >
-                                            <div
-                                                className={styles.thumbnailImage}
-                                                style={{ backgroundImage: `url(${study.image})` }}
-                                            />
-                                            {study.hasVideo && (
-                                                <div className={styles.videoOverlay}>
-                                                    <div className={styles.playButton}>
-                                                        <svg viewBox="0 0 24 24" fill="currentColor">
-                                                            <path d="M8 5v14l11-7z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span className={styles.watchText}>Watch Keynote</span>
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
-                                )}
-                            </CardContent>
-                        </Card>
+                            </div>
+                        </div>
                     </motion.div>
                 ))}
             </motion.div>
