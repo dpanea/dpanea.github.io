@@ -66,18 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('keynote-video');
 
     if (lightbox && openBtn && closeBtn && overlay) {
+        const videoSrc = "https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I";
+
         const openLightbox = () => {
             lightbox.classList.add('open');
             document.body.style.overflow = 'hidden';
-            if (video) video.play();
+            if (video) video.src = videoSrc + "&autoplay=1";
         };
 
         const closeLightbox = () => {
             lightbox.classList.remove('open');
             document.body.style.overflow = '';
             if (video) {
-                video.pause();
-                video.currentTime = 0;
+                video.src = videoSrc;
             }
         };
 
