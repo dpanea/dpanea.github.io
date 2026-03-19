@@ -6,51 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum | Daniel Panea</title>
     <meta name="description" content="Legal information and imprint for Daniel Panea AI Engineering services.">
-
-    <!-- Open Graph & Meta (Simplified for legal pages) -->
     <meta name="robots" content="noindex">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="shortcut icon" href="assets/images/logo.png">
     <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Navigation (Simplified or Standard) -->
-    <header class="header">
+    <header class="header header--scrolled">
         <nav class="nav">
             <a href="index.html" class="nav__logo">
                 <img src="assets/images/logo.png" alt="Daniel Panea" class="nav__logo-image">
             </a>
 
-            <div class="nav__desktop-links">
-                <a href="index.html#value" class="nav__link">Services</a>
+            <div class="nav__links">
+                <a href="index.html#services" class="nav__link">Services</a>
                 <a href="index.html#process" class="nav__link">Process</a>
                 <a href="index.html#work" class="nav__link">Work</a>
                 <a href="index.html#about" class="nav__link">About</a>
             </div>
 
             <div class="nav__actions">
-                <a href="https://calendly.com/daniel-panea/discovery-call" class="btn btn--primary btn--sm">Book a
-                    Call</a>
+                <a href="https://calendly.com/daniel-panea/discovery-call" class="btn btn--primary btn--sm">Book a Call</a>
             </div>
         </nav>
     </header>
 
     <main class="legal-main">
         <div class="legal-container">
-            <a href="index.html" class="legal-back-link">← Back to Home</a>
+            <a href="index.html" class="legal-back-link">&larr; Back to Home</a>
 
             <h1 class="legal-title">Impressum</h1>
             <p class="legal-subtitle">Legal Notice (Gesetzliche Anbieterkennung)</p>
@@ -58,12 +52,12 @@
             <section class="legal-section">
                 <h2>Contact Information</h2>
                 <address class="legal-address">
-                    <strong>Daniel Panea</strong><br />
-                    AI Engineering & Consulting<br />
-                    <br />
-                    Santa Cruz de Tenerife<br />
-                    Canary Islands, Spain<br />
-                    <br />
+                    <strong>Daniel Panea</strong><br>
+                    AI Engineering & Consulting<br>
+                    <br>
+                    Santa Cruz de Tenerife<br>
+                    Canary Islands, Spain<br>
+                    <br>
                     Email: <a href="mailto:me@danielpanea.com">me@danielpanea.com</a>
                 </address>
             </section>
@@ -131,51 +125,29 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
+            <div class="footer__grid">
                 <div class="footer__brand">
-                    <div class="footer__logo">
-                        <span class="footer__logo-text">Daniel Panea</span>
-                        <span class="footer__logo-subtext">AI Architect</span>
-                    </div>
-                    <p class="footer__tagline">Sovereign AI Engineering for European Enterprises</p>
+                    <span class="footer__name">Daniel Panea</span>
+                    <span class="footer__role">AI Architect</span>
+                    <p class="footer__tagline">Sovereign AI Engineering for European Companies</p>
                 </div>
-
                 <div class="footer__links">
-                    <div class="footer__link-group">
-                        <h4 class="footer__link-title">Connect</h4>
-                        <a href="https://www.linkedin.com/in/daniel-panea-lichtig" target="_blank"
-                            rel="noopener noreferrer" class="footer__link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                </path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                            LinkedIn
-                        </a>
-                        <a href="mailto:me@danielpanea.com" class="footer__link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            Email
-                        </a>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Connect</h4>
+                        <a href="https://www.linkedin.com/in/daniel-panea-lichtig" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                        <a href="mailto:me@danielpanea.com" class="footer__link">Email</a>
                     </div>
-                    <div class="footer__link-group">
-                        <h4 class="footer__link-title">Legal</h4>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Legal</h4>
                         <a href="impressum.html" class="footer__link">Impressum</a>
                         <a href="privacy.html" class="footer__link">Privacy Policy</a>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__copyright">
-                <p>© 2025 Daniel Panea. All rights reserved.</p>
-                <p class="footer__location">Based in the Canary Islands, EU 🇪🇺</p>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Daniel Panea. All rights reserved.</p>
+                <p>Based in the Canary Islands, EU</p>
             </div>
         </div>
     </footer>
