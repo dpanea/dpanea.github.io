@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>From demo to production - Daniel Panea</title>
+    <meta name="description" content="What changes when AI moves from a prototype into a real business workflow.">
+    <link rel="canonical" href="https://danielpanea.com/blog/demo-to-production.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/dp-logo.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="nav-logo" href="../index.html#top" aria-label="Daniel Panea home">
+                <img src="../assets/images/dp-logo.svg" alt="" class="nav-logo__mark">
+                <span>Daniel <strong>Panea</strong></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../case-studies.html">Case studies</a>
+                <a href="../index.html#scorecard">Scorecard</a>
+                <a href="index.html">Blog</a>
+                <a href="../index.html#about">About</a>
+            </div>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <a href="../en/" data-lang-switch="en">EN</a>
+                    <a href="../de/" data-lang-switch="de">DE</a>
+                    <a href="../es/" data-lang-switch="es">ES</a>
+                </div>
+                <a class="btn btn-primary btn-small" href="https://calendly.com/daniel-panea/discovery-call" data-analytics-event="book_assessment_nav">Book assessment</a>
+                <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <article class="article-page">
+            <div class="article-inner">
+                <a class="legal-back-link" href="index.html">Back to Blog</a>
+                <p class="eyebrow">Essay / 2026-04-29</p>
+                <h1>From demo to production: what changes when AI touches real operations.</h1>
+                <p class="article-lead">A demo proves that something can work once. A production AI workflow has to keep working when people rely on it.</p>
+                <p>The moment an AI system touches real operations, model quality is only one part of the problem. The system needs permissions, logging, evaluation, observability, fallback paths, documentation, and ownership.</p>
+                <p>Production also changes the role of human review. In a demo, a human can manually inspect every output. In a real workflow, you need to decide where review is required, where automation is acceptable, and how exceptions move through the process.</p>
+                <p>Data boundaries become more important as usage grows. Prompts, uploaded files, generated outputs, embeddings, and logs can all contain sensitive company knowledge. The architecture has to make those boundaries explicit.</p>
+                <p>The work after the demo is not glamorous, but it is what makes AI useful. A reliable AI system is a business workflow with an AI component, not a model call with a user interface around it.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-brand">Daniel <strong>Panea</strong></p>
+                <p>Private AI for companies that value their data.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../privacy.html">Privacy</a>
+            </nav>
+            <p class="footer-bottom">&copy; 2026 Daniel Panea. Based in Europe.</p>
+        </div>
+    </footer>
+
+    <a class="back-to-top" id="back-to-top" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5 L5 12 M12 5 L19 12 M12 5 L12 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+    <script src="../assets/js/language.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

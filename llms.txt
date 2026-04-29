@@ -36,5 +36,7 @@ Current topics include private AI, data boundaries, workflow-first implementatio
 - German: https://danielpanea.com/de/
 - Spanish: https://danielpanea.com/es/
 - Case Studies: https://danielpanea.com/case-studies.html
-- Blog: https://danielpanea.com/blog.html
+- German Case Studies: https://danielpanea.com/de/case-studies.html
+- Spanish Case Studies: https://danielpanea.com/es/case-studies.html
+- Blog: https://danielpanea.com/blog/
 - Contact / Assessment: https://calendly.com/daniel-panea/discovery-call

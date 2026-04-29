@@ -17,32 +17,32 @@
   </url>
   <url>
     <loc>https://danielpanea.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/"/>
   </url>
   <url>
     <loc>https://danielpanea.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/"/>
   </url>
   <url>
     <loc>https://danielpanea.com/case-studies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/case-studies.html"/>
   </url>
-  <url>
-    <loc>https://danielpanea.com/blog.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/blog-private-ai-control.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/blog-boring-frequent-painful.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/blog-demo-to-production.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/impressum.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/privacy.html</loc>
-  </url>
-  <url>
-    <loc>https://danielpanea.com/llms.txt</loc>
-  </url>
+  <url><loc>https://danielpanea.com/de/case-studies.html</loc></url>
+  <url><loc>https://danielpanea.com/es/case-studies.html</loc></url>
+  <url><loc>https://danielpanea.com/blog/</loc></url>
+  <url><loc>https://danielpanea.com/blog/private-ai-control.html</loc></url>
+  <url><loc>https://danielpanea.com/blog/boring-frequent-painful.html</loc></url>
+  <url><loc>https://danielpanea.com/blog/demo-to-production.html</loc></url>
+  <url><loc>https://danielpanea.com/impressum.html</loc></url>
+  <url><loc>https://danielpanea.com/privacy.html</loc></url>
+  <url><loc>https://danielpanea.com/llms.txt</loc></url>
 </urlset>
