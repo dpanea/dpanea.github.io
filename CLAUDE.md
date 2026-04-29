@@ -45,3 +45,24 @@ Dark theme (background `#050505`) with blue/purple accent gradient (`#3b82f6` �
 ## EU Compliance
 
 The site targets the European market. `impressum.html` is a legal requirement for EU business operations. `privacy.html` covers GDPR compliance. Both pages must remain accessible from the footer on all three pages.
+
+## Repository Guidelines
+
+### Project Structure
+- `index.html` — main landing page
+- `privacy.html` — GDPR privacy policy (`noindex`)
+- `impressum.html` — EU legal notice (`noindex`)
+- `assets/css/style.css` — all styling (~1400 lines), CSS custom properties at the top
+- `assets/js/main.js` — single vanilla JS file (~250 lines), no dependencies
+- `assets/images/` — all image assets; SVG icons are inlined in HTML
+- `CNAME` — GitHub Pages custom domain configuration
+
+### Coding Style
+- Pure HTML/CSS/JS — no build tools, no frameworks, no package manager.
+- Prefer extending the existing CSS custom property system over hardcoded values.
+- Navigation and footer are duplicated across all three HTML pages — keep them in sync.
+- Keep JavaScript dependency-free; no npm packages.
+
+### Deployment
+- Push to `main` triggers automatic deployment to GitHub Pages at `danielpanea.com`.
+- No build step required.
