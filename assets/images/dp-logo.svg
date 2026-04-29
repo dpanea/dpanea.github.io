@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Daniel Panea monogram</title>
+  <path d="M26 20 L26 80 L56 80 A30 30 0 0 0 56 20 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="miter"/>
+  <path d="M40 34 L40 88 M40 34 L56 34 A12 12 0 0 1 56 58 L40 58" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

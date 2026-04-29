@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://danielpanea.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/"/>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/"/>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/de/</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/es/</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/case-studies.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/blog.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/blog-private-ai-control.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/blog-boring-frequent-painful.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/blog-demo-to-production.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/impressum.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/llms.txt</loc>
+  </url>
+</urlset>

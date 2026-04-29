@@ -1,0 +1,40 @@
+# Daniel Panea
+
+Daniel Panea builds private AI systems for companies that value their data, internal knowledge, and business processes.
+
+## What I Do
+
+I help companies identify, build, deploy, and optimize private AI systems that can work on real business workflows without giving up control over data, tools, logs, prompts, outputs, access rights, or long-term maintainability.
+
+## Services
+
+- Private AI Workflow Assessment: identify the first useful and safe workflow to build.
+- First Private AI Pilot: build a constrained system around one real workflow.
+- Production AI Workflow System: move a pilot into a reliable, maintainable, team-ready system.
+- AI Infrastructure & Inference Optimization: improve private deployment, model serving, latency, cost, and GPU usage.
+- AI Education & Upskilling: practical workshops for leadership and operations teams.
+
+## Case Studies
+
+- IT Service Management Automation: local AI pipeline for support-ticket triage and root-cause discovery, in collaboration with DigitFlow.
+- AI for Education: backend and AI infrastructure for Mark My Words.
+- Synthetic Data Engine: privacy-preserving synthetic datasets for validation and testing.
+- Conference Keynote: sovereign AI strategy and private AI adoption in Europe.
+
+## Scorecard
+
+The AI Use-Case Scorecard helps teams evaluate whether a workflow is frequent, painful, clear, data-ready, and safe enough for a first private AI pilot.
+
+## Blog
+
+Current topics include private AI, data boundaries, workflow-first implementation, production LLM systems, human review, and maintainable AI infrastructure.
+
+## Authoritative Links
+
+- Homepage: https://danielpanea.com/
+- English: https://danielpanea.com/en/
+- German: https://danielpanea.com/de/
+- Spanish: https://danielpanea.com/es/
+- Case Studies: https://danielpanea.com/case-studies.html
+- Blog: https://danielpanea.com/blog.html
+- Contact / Assessment: https://calendly.com/daniel-panea/discovery-call

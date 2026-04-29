@@ -7,37 +7,44 @@
     <title>Privacy Policy | Daniel Panea</title>
     <meta name="description" content="Privacy policy for Daniel Panea AI Engineering services.">
     <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://danielpanea.com/privacy.html">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
-    <link rel="shortcut icon" href="assets/images/logo.png">
-    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/dp-logo.svg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="header header--scrolled">
+    <header class="site-header">
         <nav class="nav">
-            <a href="index.html" class="nav__logo">
-                <img src="assets/images/logo.png" alt="Daniel Panea" class="nav__logo-image">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/dp-logo.svg" alt="" class="nav-logo__mark">
+                <span>Daniel <strong>Panea</strong></span>
             </a>
 
-            <div class="nav__links">
-                <a href="index.html#services" class="nav__link">Services</a>
-                <a href="index.html#process" class="nav__link">Process</a>
-                <a href="index.html#work" class="nav__link">Work</a>
-                <a href="index.html#about" class="nav__link">About</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="case-studies.html">Case studies</a>
+                <a href="index.html#scorecard">Scorecard</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#about">About</a>
             </div>
 
-            <div class="nav__actions">
-                <a href="https://calendly.com/daniel-panea/discovery-call" class="btn btn--primary btn--sm">Book a Call</a>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <a href="en/" data-lang-switch="en">EN</a>
+                    <a href="de/" data-lang-switch="de">DE</a>
+                    <a href="es/" data-lang-switch="es">ES</a>
+                </div>
+                <a href="https://calendly.com/daniel-panea/discovery-call" class="btn btn-primary btn-small" data-analytics-event="book_assessment_nav">Book assessment</a>
             </div>
         </nav>
     </header>
@@ -88,8 +95,17 @@
 
                 <h3>3.3 Cookies</h3>
                 <p>
-                    This website uses essential cookies that are necessary for the website to
-                    function properly. No tracking or advertising cookies are used.
+                    This website is designed to avoid cookies. The language preference is stored
+                    in localStorage when you manually choose a language. No tracking or advertising
+                    cookies are used.
+                </p>
+
+                <h3>3.4 Analytics</h3>
+                <p>
+                    This website may use Cloudflare Web Analytics for aggregate, cookie-free
+                    traffic analytics such as page views, referrers, browser information, and
+                    approximate country-level statistics. The analytics setup is intended for
+                    aggregate website measurement, not individual visitor profiling.
                 </p>
             </section>
 
@@ -132,6 +148,7 @@
                 <p>This website may use the following third-party services:</p>
                 <ul>
                     <li><strong>GitHub Pages:</strong> Website hosting</li>
+                    <li><strong>Cloudflare Web Analytics:</strong> Cookie-free aggregate website analytics</li>
                     <li><strong>Calendly:</strong> Appointment scheduling</li>
                     <li><strong>ConvertKit:</strong> Email delivery for lead magnet</li>
                 </ul>
@@ -175,7 +192,7 @@
                 <div class="footer__brand">
                     <span class="footer__name">Daniel Panea</span>
                     <span class="footer__role">AI Architect</span>
-                    <p class="footer__tagline">Sovereign AI Engineering for European Companies</p>
+                    <p class="footer__tagline">Private AI for companies that value their data</p>
                 </div>
                 <div class="footer__links">
                     <div class="footer__col">
@@ -197,6 +214,9 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
