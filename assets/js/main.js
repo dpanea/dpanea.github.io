@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const DEFAULT_KIT_FORM_ID = '8913239';
+    const DEFAULT_CONTACT_FORM_ID = '9387998';
     const KIT_API_KEY = 'cvO5g-EviPgxF0n7wWRLmw';
     const VIDEO_SRC = 'https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I';
 
@@ -228,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
+        contactForm.addEventListener('submit', async (event) => {
             event.preventDefault();
 
             const spamField = contactForm.querySelector('[name="website"]');
@@ -238,60 +239,76 @@ document.addEventListener('DOMContentLoaded', () => {
             const language = document.documentElement.lang || 'en';
             const labels = {
                 en: {
-                    subject: 'Private AI workflow inquiry',
-                    sent: 'Your email client should open with the structured inquiry. If it does not, please use the email button above.',
-                    fields: {
-                        name: 'Name',
-                        company: 'Company',
-                        email: 'Email',
-                        workflow: 'Workflow',
-                        data: 'Data involved',
-                        stage: 'Stage',
-                        language: 'Preferred language',
-                        message: 'Anything else'
-                    }
+                    success: 'Thanks. I will get back to you shortly.',
+                    error: 'Something went wrong. Please send me an email instead.'
                 },
                 de: {
-                    subject: 'Anfrage zu privater KI',
-                    sent: 'Ihr E-Mail-Programm sollte sich mit der strukturierten Anfrage öffnen. Falls nicht, nutzen Sie bitte den E-Mail-Button oben.',
-                    fields: {
-                        name: 'Name',
-                        company: 'Unternehmen',
-                        email: 'E-Mail',
-                        workflow: 'Ablauf',
-                        data: 'Daten',
-                        stage: 'Phase',
-                        language: 'Bevorzugte Sprache',
-                        message: 'Weitere Informationen'
-                    }
+                    success: 'Danke. Ich melde mich zeitnah bei Ihnen.',
+                    error: 'Etwas ist schiefgelaufen. Bitte senden Sie mir stattdessen eine E-Mail.'
                 },
                 es: {
-                    subject: 'Consulta sobre IA privada',
-                    sent: 'Tu cliente de email debería abrirse con la consulta estructurada. Si no se abre, usa el botón de email de arriba.',
-                    fields: {
-                        name: 'Nombre',
-                        company: 'Empresa',
-                        email: 'Email',
-                        workflow: 'Workflow',
-                        data: 'Datos implicados',
-                        stage: 'Fase',
-                        language: 'Idioma preferido',
-                        message: 'Algo más'
-                    }
+                    success: 'Gracias. Te responderé pronto.',
+                    error: 'Algo ha fallado. Por favor, envíame un email.'
                 }
             };
             const copy = labels[language] || labels.en;
-            const body = ['name', 'company', 'email', 'workflow', 'data', 'stage', 'language', 'message']
-                .map((key) => `${copy.fields[key]}: ${formData.get(key) || ''}`)
-                .join('\n\n');
-            const recipient = ['me', 'danielpanea.com'].join('@');
-            const mailto = `mailto:${recipient}?subject=${encodeURIComponent(copy.subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailto;
-
             const note = document.getElementById('contact-form-note');
+            const submit = contactForm.querySelector('[type="submit"]');
+            const kitFormId = contactForm.getAttribute('data-kit-form-id') || DEFAULT_CONTACT_FORM_ID;
+
             if (note) {
-                note.hidden = false;
-                note.textContent = copy.sent;
+                note.hidden = true;
+                note.classList.remove('form-note-error');
+            }
+
+            if (submit) submit.disabled = true;
+
+            try {
+                const response = await fetch(`https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        api_key: KIT_API_KEY,
+                        email: String(formData.get('email') || '').trim(),
+                        first_name: String(formData.get('name') || '').trim(),
+                        fields: {
+                            company: String(formData.get('company') || '').trim(),
+                            workflow: String(formData.get('workflow') || '').trim(),
+                            data: String(formData.get('data') || '').trim(),
+                            stage: String(formData.get('stage') || '').trim(),
+                            language: String(formData.get('language') || '').trim(),
+                            message: String(formData.get('message') || '').trim()
+                        }
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.message || copy.error);
+                }
+
+                contactForm.reset();
+                if (note) {
+                    note.textContent = copy.success;
+                    note.hidden = false;
+                }
+                window.dispatchEvent(new CustomEvent('dp:analytics-event', {
+                    detail: {
+                        event: 'contact_form_success',
+                        language,
+                        path: window.location.pathname,
+                        kit_form_id: kitFormId
+                    }
+                }));
+            } catch (error) {
+                if (note) {
+                    note.textContent = error.message || copy.error;
+                    note.classList.add('form-note-error');
+                    note.hidden = false;
+                }
+            } finally {
+                if (submit) submit.disabled = false;
             }
         });
     }
