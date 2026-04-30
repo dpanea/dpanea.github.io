@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Small Open-Source Models Often Win in Business - Daniel Panea</title>
+    <meta name="description" content="Why small open-source models often beat frontier models for business workflows: cost, speed, deployment control, and reliable instruction following.">
+    <meta name="author" content="Daniel Panea">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://danielpanea.com/blog/small-open-source-models-business.html">
+    <meta property="og:site_name" content="Daniel Panea">
+    <meta property="og:title" content="Why Small Open-Source Models Often Win in Business">
+    <meta property="og:description" content="Why small open-source models often beat frontier models for business workflows: cost, speed, deployment control, and reliable instruction following.">
+    <meta property="og:image" content="https://danielpanea.com/assets/images/danielpanea.jpeg">
+    <meta property="article:published_time" content="2026-04-30">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Small Open-Source Models Often Win in Business">
+    <meta name="twitter:description" content="Why small open-source models often beat frontier models for business workflows: cost, speed, deployment control, and reliable instruction following.">
+    <meta name="twitter:image" content="https://danielpanea.com/assets/images/danielpanea.jpeg">
+    <link rel="canonical" href="https://danielpanea.com/blog/small-open-source-models-business.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/dp-logo.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why Small Open-Source Models Often Win in Business",
+        "description": "Why small open-source models often beat frontier models for business workflows: cost, speed, deployment control, and reliable instruction following.",
+        "datePublished": "2026-04-30",
+        "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com"},
+        "mainEntityOfPage": "https://danielpanea.com/blog/small-open-source-models-business.html"
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="nav-logo" href="../index.html#top" aria-label="Daniel Panea home">
+                <img src="../assets/images/dp-logo.svg" alt="" class="nav-logo__mark">
+                <span>Daniel <strong>Panea</strong></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../case-studies.html">Case studies</a>
+                <a href="../index.html#scorecard">Scorecard</a>
+                <a href="index.html">Blog</a>
+                <a href="../index.html#about">About</a>
+            </div>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <a href="/en/" data-lang-switch="en">EN</a>
+                    <a href="/de/" data-lang-switch="de">DE</a>
+                    <a href="/es/" data-lang-switch="es">ES</a>
+                </div>
+                <a class="btn btn-primary btn-small" href="https://calendly.com/daniel-panea/discovery-call" data-analytics-event="book_assessment_nav">Book assessment</a>
+                <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <article class="article-page">
+            <div class="article-inner">
+                <a class="legal-back-link" href="index.html">Back to Blog</a>
+                <p class="eyebrow">Essay / 2026-04-30</p>
+                <h1>Why Small Open-Source Models Often Win in Business</h1>
+                <p class="article-lead">Most companies reach for the biggest, most capable model they can pay for. For real business workflows, that&#x27;s usually the wrong instinct.</p>
+                <p>When companies start working with AI, the default instinct is to reach for the biggest, most capable model they can afford. The frontier model from OpenAI, or Anthropic, or Google. The thing they read about in the news.</p>
+                <p>For most business workflows, that's the wrong instinct, and it costs you on three different fronts at once.</p>
+                <p>This is a follow-up to <a href="private-ai-control.html">the flagship private AI piece</a>. The argument there was that responsible AI for companies means controlling the model and the data. The question this post answers is: once you've accepted that, <em>which</em> model should you actually pick?</p>
+                <p>The short answer for most business cases is: a small, open-source one.</p>
+                <h2>What businesses actually need from a model</h2>
+                <p>Most casual ChatGPT use is open-ended. People ask it about random things in their life, write essays, have free-form conversations. For that, you genuinely do need a huge model with a lot of general world knowledge.</p>
+                <p>Business automations are almost never like this.</p>
+                <p>In business, you usually want AI to:</p>
+                <ul>
+                <li>follow clear instructions</li>
+                <li>look at a piece of data (an email, a document, a database row)</li>
+                <li>produce a specific, structured output (a category, an extraction, a draft, a routing decision)</li>
+                </ul>
+                <p>This is what's called instruction following. It is not "have a conversation about anything"; it is "do this specific thing reliably, every time, on data I give you". Classification, extraction, routing, drafting against a template, summarising against a known corpus, parsing messy inputs into clean ones. That kind of work.</p>
+                <p>Modern small open-source models (Google's smaller Gemma family, Qwen's smaller variants, and others) are excellent at instruction following, and that's most of what businesses actually need.</p>
+                <h2>The three boring advantages</h2>
+                <h3>Cost</h3>
+                <p>Smaller means cheaper to run, sometimes by an order of magnitude. At the volumes a real business workflow generates (thousands of calls a day, sometimes much more), the difference between a small open-source model and a frontier API is the difference between a line item that doesn't need a meeting and one that does.</p>
+                <h3>Speed</h3>
+                <p>Fewer parameters means fewer calculations per response, so the output comes back much faster. For interactive tools (anything where a person is waiting on the answer) latency is part of the user experience, and the small-model gap there is large.</p>
+                <h3>Hardware</h3>
+                <p>Smaller models run on hardware that's actually available without a procurement project. A small model can sit on a single GPU you rent in a private cloud, or even on a workstation under someone's desk. Big frontier models cannot, which immediately forces you back into renting them as a service from somebody else, with all the loss of control that comes with that.</p>
+                <p>These three benefits compound. Cheaper plus faster plus easier-to-host means you can deploy more workflows, more places, with less ceremony.</p>
+                <h2>The quieter benefit: small models tend to hallucinate less</h2>
+                <p>This is the one most people don't expect, but the intuition is straightforward.</p>
+                <p>A huge model carries a vast amount of internal world knowledge that it can confabulate from when it doesn't actually know the answer. The phrase "halfway plausible nonsense" exists for a reason: a frontier model with no grounding will often invent something convincing rather than say it doesn't know. A small model has less of that internal knowledge to draw on, so it is more inclined to follow what's actually in front of it and less inclined to invent.</p>
+                <p>For business workflows, this is exactly the behaviour you want, because you are giving the model the context it needs anyway: the document to extract from, the policy to apply, the data to classify. You don't need it to know things from its training data; you need it to read carefully and follow instructions. Small models do this more obediently, with less risk of confidently making things up.</p>
+                <h2>When the big model is still the right answer</h2>
+                <p>Sometimes you do need the big one. Truly open-ended reasoning, very long context, broad world knowledge, agentic work that has to flexibly handle whatever comes. For those cases the gap is real and the frontier still matters.</p>
+                <p>But "most of the time you need the frontier" is the kind of folk wisdom that mostly survives because nobody questions it. For instruction-following business workflows, which are the bulk of what real automations actually do, the smaller model is often the better choice on every dimension.</p>
+                <h2>What this changes about how you should choose a model</h2>
+                <p>The biggest shift, once you take this seriously, is that the model becomes a deployment question rather than a vendor question.</p>
+                <p>"Which open-source model fits this workflow, and where do we run it?" replaces "which provider do we sign with?"</p>
+                <p>That changes a lot of downstream things. Cost, latency, and reliability become engineering decisions you can actually act on, rather than line items you negotiate with someone else's account manager. "Will this still work in six months" is an answer you control rather than a hope. Vendor risk doesn't disappear (you still have hardware, hosting, and dependencies), but the catastrophic single point of failure (one provider, one model, one set of terms) is gone.</p>
+                <p>The trade-off is that someone has to know how to deploy and run these models. That's the practical work, and it's covered separately in the deployment piece.</p>
+                <p>The point I want to leave you with is the upstream choice. If you've accepted that you want control over the model, smaller open-source models often make that easier, cheaper, and more reliable than the conventional wisdom assumes. The biggest model on the leaderboard is rarely the right answer for the workflow in front of you.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <p class="footer-brand">Daniel <strong>Panea</strong></p>
+                <p>Private AI for companies that value their data.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../privacy.html">Privacy</a>
+            </nav>
+            <p class="footer-bottom">&copy; 2026 Daniel Panea. Based in Europe.</p>
+        </div>
+    </footer>
+
+    <a class="back-to-top" id="back-to-top" href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5 L5 12 M12 5 L19 12 M12 5 L12 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+    <script src="../assets/js/language.js"></script>
+    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

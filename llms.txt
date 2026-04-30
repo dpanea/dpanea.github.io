@@ -25,7 +25,17 @@ I help companies identify, build, deploy, and optimize private AI systems that c
 
 The AI Use-Case Scorecard helps teams evaluate whether a workflow is frequent, painful, clear, data-ready, and safe enough for a first private AI pilot.
 
+- English scorecard PDF: https://danielpanea.com/assets/downloads/ai-use-case-scorecard-daniel-panea-en.pdf
+- German scorecard PDF: https://danielpanea.com/assets/downloads/ki-use-case-scorecard-daniel-panea-de.pdf
+- Spanish scorecard PDF: https://danielpanea.com/assets/downloads/scorecard-casos-de-uso-ia-daniel-panea-es.pdf
+
 ## Blog
+
+Current published blog posts:
+
+- Private AI: What It Means: https://danielpanea.com/blog/private-ai-control.html
+- Shadow AI: The Disaster Already Happening: https://danielpanea.com/blog/shadow-ai-disaster-already-happening.html
+- Why Small Open-Source Models Often Win in Business: https://danielpanea.com/blog/small-open-source-models-business.html
 
 Current topics include private AI, data boundaries, workflow-first implementation, production LLM systems, human review, and maintainable AI infrastructure.
 

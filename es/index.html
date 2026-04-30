@@ -65,9 +65,9 @@
             </div>
             <div class="nav-actions">
                 <div class="language-switcher" aria-label="Selector de idioma">
-                    <a href="../en/" data-lang-switch="en">EN</a>
-                    <a href="../de/" data-lang-switch="de">DE</a>
-                    <a href="../es/" data-lang-switch="es">ES</a>
+                    <a href="/en/" data-lang-switch="en">EN</a>
+                    <a href="/de/" data-lang-switch="de">DE</a>
+                    <a href="/es/" data-lang-switch="es">ES</a>
                 </div>
                 <a class="btn btn-primary btn-small" href="https://calendly.com/daniel-panea/discovery-call" data-analytics-event="book_assessment_nav_es">Reservar assessment</a>
                 <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir navegación">
@@ -168,8 +168,8 @@
                 <div class="section-head">
                     <div class="section-num">03 - Servicios</div>
                     <div>
-                        <h2>Un camino práctico desde la incertidumbre sobre IA hasta workflows privados y listos para producción.</h2>
-                        <p class="section-note">La IA privada se vuelve valiosa cuando llega al trabajo real. No tienes que empezar por el paso uno. Si ya tienes un caso de uso, un piloto o un equipo técnico interno, puedo entrar donde estés.</p>
+                        <h2 class="services-heading">Un camino práctico desde la <strong>incertidumbre sobre IA</strong> hasta <strong>workflows privados y listos para producción.</strong></h2>
+                        <p class="section-note services-note">La IA privada se vuelve valiosa cuando llega al trabajo real. No tienes que empezar por el paso uno. Si ya tienes un caso de uso, un piloto o un equipo técnico interno, puedo entrar donde estés.</p>
                     </div>
                 </div>
                 <div class="stages reveal-group">
@@ -432,11 +432,11 @@
                         <p>Una scorecard de 5 minutos para evaluar si un proceso real de negocio es frecuente, doloroso, claro, preparado en datos y suficientemente seguro para un primer piloto de IA privada.</p>
                         <a class="text-link text-link-light" href="#contact" data-analytics-event="scorecard_assessment_click_es">¿Tienes un caso prometedor? Reserva el assessment</a>
                     </div>
-                    <form class="scorecard-form" id="lead-form">
+                    <form class="scorecard-form" id="lead-form" data-scorecard-url="../assets/downloads/scorecard-casos-de-uso-ia-daniel-panea-es.pdf">
                         <label for="email">Email profesional</label>
                         <input id="email" name="email" type="email" placeholder="you@company.com" required>
                         <button id="submit-btn" type="submit" data-analytics-event="scorecard_submit_click_es">Enviarme la scorecard</button>
-                        <p class="form-note" id="success-message" hidden>Revisa tu email. La scorecard está en camino.</p>
+                        <p class="form-note" id="success-message" hidden>Revisa tu email. También puedes <a href="../assets/downloads/scorecard-casos-de-uso-ia-daniel-panea-es.pdf" download>descargar la scorecard ahora</a>.</p>
                         <p class="form-note form-note-error" id="error-message" hidden></p>
                     </form>
                 </div>
@@ -449,26 +449,27 @@
                     <div class="section-num">09 - Blog</div>
                     <div>
                         <h2>Ideas sobre IA privada, control de datos y sistemas LLM en producción.</h2>
+                        <p class="section-note blog-language-note">Nota: los posts del blog están escritos a mano y por ahora solo están disponibles en inglés.</p>
                     </div>
                 </div>
                 <div class="insights-grid reveal-group">
                     <article class="insight-card">
-                        <p class="eyebrow">Essay / 2026-04-29</p>
-                        <h3>La IA privada no es ideología. Es cómo las empresas mantienen el control mientras usan IA.</h3>
-                        <p>Por qué la IA privada trata menos de evitar la nube y más de fronteras de datos, logs, permisos y gobernanza.</p>
-                        <a href="../blog/private-ai-control.html">Leer artículo completo</a>
+                        <p class="eyebrow">Essay / 2026-04-30</p>
+                        <h3>Private AI: What It Means</h3>
+                        <p>La definición central: IA privada significa control sobre el modelo y control sobre los datos que le das. Todo lo demás parte de ahí.</p>
+                        <a href="../blog/private-ai-control.html">Leer artículo en inglés</a>
                     </article>
                     <article class="insight-card">
-                        <p class="eyebrow">Note / 2026-04-29</p>
-                        <h3>El primer caso de uso de IA debería ser aburrido, frecuente y doloroso.</h3>
-                        <p>Un filtro práctico para elegir qué automatizar primero. Los workflows aburridos suelen ser los que más se acumulan.</p>
-                        <a href="../blog/boring-frequent-painful.html">Leer artículo completo</a>
+                        <p class="eyebrow">Essay / 2026-04-30</p>
+                        <h3>Shadow AI: The Disaster Already Happening</h3>
+                        <p>Qué ocurre cuando empleados ya usan IA en el trabajo de la empresa, y por qué bloquearla es más débil que crear un camino privado y autorizado.</p>
+                        <a href="../blog/shadow-ai-disaster-already-happening.html">Leer artículo en inglés</a>
                     </article>
                     <article class="insight-card">
-                        <p class="eyebrow">Essay / 2026-04-29</p>
-                        <h3>De la demo a producción: qué cambia cuando la IA toca operaciones reales.</h3>
-                        <p>Evaluación, observabilidad, permisos, fallback paths, mantenimiento y el trabajo que hace que la IA sea fiable.</p>
-                        <a href="../blog/demo-to-production.html">Leer artículo completo</a>
+                        <p class="eyebrow">Essay / 2026-04-30</p>
+                        <h3>Why Small Open-Source Models Often Win in Business</h3>
+                        <p>Muchos workflows de negocio necesitan seguir instrucciones, producir outputs estructurados, controlar costes y tener baja latencia. Eso suele apuntar a modelos open-source pequeños.</p>
+                        <a href="../blog/small-open-source-models-business.html">Leer artículo en inglés</a>
                     </article>
                 </div>
                 <div class="section-more">

@@ -3,14 +3,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Private AI is not ideology - Daniel Panea</title>
-    <meta name="description" content="Why private AI is about keeping control over company data, logs, permissions, and governance while using modern AI.">
+    <title>Private AI: What It Means - Daniel Panea</title>
+    <meta name="description" content="What private AI means for companies: control over the model, control over the data, and responsible AI usage without giving up strategic assets.">
+    <meta name="author" content="Daniel Panea">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://danielpanea.com/blog/private-ai-control.html">
+    <meta property="og:site_name" content="Daniel Panea">
+    <meta property="og:title" content="Private AI: What It Means">
+    <meta property="og:description" content="What private AI means for companies: control over the model, control over the data, and responsible AI usage without giving up strategic assets.">
+    <meta property="og:image" content="https://danielpanea.com/assets/images/danielpanea.jpeg">
+    <meta property="article:published_time" content="2026-04-30">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Private AI: What It Means">
+    <meta name="twitter:description" content="What private AI means for companies: control over the model, control over the data, and responsible AI usage without giving up strategic assets.">
+    <meta name="twitter:image" content="https://danielpanea.com/assets/images/danielpanea.jpeg">
     <link rel="canonical" href="https://danielpanea.com/blog/private-ai-control.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../assets/images/dp-logo.svg">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Private AI: What It Means",
+        "description": "What private AI means for companies: control over the model, control over the data, and responsible AI usage without giving up strategic assets.",
+        "datePublished": "2026-04-30",
+        "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com"},
+        "mainEntityOfPage": "https://danielpanea.com/blog/private-ai-control.html"
+    }
+    </script>
 </head>
 <body>
     <header class="site-header" id="site-header">
@@ -29,15 +53,13 @@
             </div>
             <div class="nav-actions">
                 <div class="language-switcher" aria-label="Language switcher">
-                    <a href="../en/" data-lang-switch="en">EN</a>
-                    <a href="../de/" data-lang-switch="de">DE</a>
-                    <a href="../es/" data-lang-switch="es">ES</a>
+                    <a href="/en/" data-lang-switch="en">EN</a>
+                    <a href="/de/" data-lang-switch="de">DE</a>
+                    <a href="/es/" data-lang-switch="es">ES</a>
                 </div>
                 <a class="btn btn-primary btn-small" href="https://calendly.com/daniel-panea/discovery-call" data-analytics-event="book_assessment_nav">Book assessment</a>
                 <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </nav>
@@ -47,13 +69,54 @@
         <article class="article-page">
             <div class="article-inner">
                 <a class="legal-back-link" href="index.html">Back to Blog</a>
-                <p class="eyebrow">Essay / 2026-04-29</p>
-                <h1>Private AI is not ideology. It is how companies keep control while using AI.</h1>
-                <p class="article-lead">The practical question is not whether a company should use AI. The practical question is whether it can use AI without losing control over its data, internal knowledge, and operating boundaries.</p>
-                <p>Private AI is often discussed as if it were mainly a philosophical stance against the cloud. That misses the point. The real issue is control: where company data goes, what gets logged, who can access it, how long context is retained, and whether the company can explain the system to leadership, legal, procurement, and the people who depend on the workflow.</p>
-                <p>For serious companies, internal knowledge is not a casual input. Contracts, financial information, customer records, operational data, source code, strategy documents, and employee information are strategic assets. Modern AI can create real productivity gains, but those gains become difficult to justify if the data boundary is unclear.</p>
-                <p>The answer is not to avoid AI. The answer is to design the boundary before the system becomes part of operations. That means choosing the right deployment model, defining access rights, setting retention rules, keeping human review where judgment matters, and building systems that can be maintained beyond the first demo.</p>
-                <p>Private AI only becomes useful when it reaches real work. The system has to connect to documents, tools, permissions, review steps, and workflows people already use. Control is the strategic layer; workflow integration is how it becomes valuable.</p>
+                <p class="eyebrow">Essay / 2026-04-30</p>
+                <h1>Private AI: What It Means</h1>
+                <p class="article-lead">Why responsible AI usage for companies is private AI.</p>
+                <p>Private AI is a term I'll use a lot. So what does it mean? For me, private AI has two components. The <strong>AI model</strong> itself, and the <strong>data</strong> you feed it. Private AI means having control over both.</p>
+                <p>That's basically it. Everything below is just unpacking what each side actually requires, and what you give up when you don't have it.</p>
+                <h2>The model side</h2>
+                <p>A private model is a model you have under control.</p>
+                <p>This means <em>not</em> using ChatGPT, for example. Because they do model updates, so the model you were using becomes outdated and they may serve it any more. The new one doesn't behave like the one you used before and it breaks your workflows, your prompts and whatever you had built around it.</p>
+                <p>Or they make it more expensive: right now most AI companies are burning through cash provided mostly by venture capital firms, and the current pricing most likely won't stay this way. So when you use external providers, you are completely subject to their will: changes in the model, in the pricing, their service uptime and downtime (see for example Anthropic's <a href="https://status.anthropic.com/history" target="_blank" rel="noopener noreferrer">public incident history</a> which shows a steady stream of outages, including a <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-a-worldwide-outage/" target="_blank" rel="noopener noreferrer">worldwide outage in April 2026 that affected 12,000+ users across Claude.ai, Claude Code and the API</a>). There have even been cases where they blocked some companies from their service with obscure or no justification: <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-nuked-a-companys-access-to-claude-stopping-60-employees-dead-in-their-tracks-support-via-google-form-is-the-only-recourse-for-vague-usage-policy-violation" target="_blank" rel="noopener noreferrer">a 60-employee company suddenly cut off, with a Google Form as the only path to appeal a vague "usage policy violation"</a>.</p>
+                <p>The opposite of that is a private model, and here you have basically two options:</p>
+                <ol>
+                <li>You can develop your own. Companies used to do this when machine learning meant building custom models, which means they obviously controlled them. But for most use cases today, this no longer makes sense. Pre-training a modern model costs billions of dollars and an absurd amount of data. It is not realistic for almost any company.</li>
+                <li>The better option is <strong>open source models</strong>. There are a lot of them, and the strongest ones are now close enough to the frontier to be serious business infrastructure: in April 2026, <a href="https://arena.ai/leaderboard" target="_blank" rel="noopener noreferrer">LMArena's Code Arena ranked GLM-5.1 fifth overall at 1536 Elo, 40 points behind the top model at 1576</a>, while <a href="https://huggingface.co/zai-org/GLM-5.1" target="_blank" rel="noopener noreferrer">its Hugging Face release is MIT-licensed</a>. Many of the best ones come from Chinese AI labs, but Google and others publish strong models too.</li>
+                </ol>
+                <p>The point is: an open source model, you can take it and deploy it yourself. You keep full control and you know it will not be changed under you.</p>
+                <p>Open source models also come in many sizes: There are huge ones like Kimi or DeepSeek, and there are very good small models from Google, Qwen, and others. The small ones cost much less to run and respond much faster, because there are far fewer calculations going through the model.</p>
+                <p>And small does not mean bad. If you don't need a generic chatbot (and in business most of the time you don't) small models do the job very well. In business you usually want AI to follow clear instructions, grab data, and produce specific outputs. Modern small open source models are excellent at instruction following. And because they carry less general world knowledge, they are often less prone to hallucinations, which is exactly the property you want when you employ them in real business workflows.</p>
+                <p>More on the model side in <a href="small-open-source-models-business.html">the model control post</a>.</p>
+                <h2>The data side</h2>
+                <p>The model is the first half. The data you feed it is the second.</p>
+                <p>A model on its own is useless if you don't give it inputs. For most casual users, the inputs are just prompts. In advanced settings, the data can be much more.</p>
+                <p>It can be everything you upload into the system: Word documents, PDFs, screenshots, images. It can be data pulled in through APIs or MCP servers, from your databases, your CRM (Salesforce or whatever you use). It can be your code, your internal reports, your financials, your strategy documents, your proprietary knowledge of your manufacturing process.</p>
+                <p>All of this is the proprietary data your company is built on. <strong>A company is largely defined by its data and knowledge, and that includes its processes.</strong> Whatever your domain, that's what captures the operational reality of the company. Much of it is not even available digitally and is still in people's heads.</p>
+                <p>When you're able to use this data correctly, it becomes insanely useful. But especially in larger companies, where departments are fragmented and people have very specific roles, it is hard to get information about what another department is doing. Most employees don't even have a real interest in finding out, they just want to do their job and go home. And at the management or owner level, there is too much going on to hold everything in your head, and probably most of it is outside your domain of expertise.</p>
+                <p>Pulling all of that data together and making it useful is hard. It is what many people in a company do, or are supposed to, and it is what most of the software you buy is meant to help with.</p>
+                <p>AI can be a very powerful tool for that. It can integrate different data sources, pull data together, give you an overview, extract new insights, suggest new approaches, remind you to follow up with clients.</p>
+                <p>And AI does not have to substitute people. It complements them. People forget; well-built AI agents don't. People are better at open-ended and creative problems; AI struggles there. The two can work side by side. AI can also supercharge the employees you already have, by giving them a better overview of their data so they can take more informed actions and quicker decisions.</p>
+                <p>I will write more on the data side separately.</p>
+                <h2>What happens if you don't control either</h2>
+                <p>So we agree that your company data is incredibly valuable. Now what happens if you use tools like ChatGPT and dump all of this into it?</p>
+                <p>Suppose you're in Europe then your data crosses the Atlantic, lands on servers in the United States, and goes out of your control. Say bye-bye to your confidential information. And even if it isn't strictly confidential, it is still important.</p>
+                <p>In the worst case, the model providers train their next model on your data. Thank you very much for your prompts, they say! We will now use this to train our newest, most powerful model, which we will make available to everyone in the world, including your competitors. So if your competitors ask anything related to whatever you are working on, the model will happily share your approach.</p>
+                <p>To avoid that disaster, providers offer enterprise tiers and business subscriptions where they at least <em>claim</em> not to train on your data (<a href="https://openai.com/enterprise-privacy/" target="_blank" rel="noopener noreferrer">OpenAI's enterprise privacy policy</a> is a typical example: "we do not train our models on your business data by default"). That's already better, if you trust them. Which is its own question, given that the same providers have happily trained on a lot of proprietary data on the internet without much regard for copyright. They don't seem too bothered by lawsuits either. In any case, putting all your trust there is probably not the wisest choice. And even if they don't train on your data, they still have your data. Who knows what they actually do with it?</p>
+                <p>That is only the picture if you are on a business or enterprise tier. The reality at most companies is worse. Many companies don't have an AI strategy or any AI usage guidelines at all, but most of their employees have already tried ChatGPT. This is what's called <strong>shadow AI</strong>. And most of the time, those employees are on the free tier, which has no privacy guarantees whatsoever. They are pasting your company's knowledge into it without you even knowing.</p>
+                <p>That is a disaster waiting to happen. Or, more accurately, already happening. More on that in <a href="shadow-ai-disaster-already-happening.html">the Shadow AI post</a>.</p>
+                <h2>So what do you do?</h2>
+                <p>If you're thinking about this at all, you're already far ahead. Many companies have not even arrived at this conclusion yet, and they are not giving it any thought.</p>
+                <p>There are two bad answers and one good one.</p>
+                <p><strong>Bad answer 1</strong>: become paralysed and do nothing because you don't know how to proceed.</p>
+                <p><strong>Bad answer 2</strong>: block all AI inside your company because you don't want your data to flow into American servers. Your competitors will use AI whether they do so responsibly or not, and at least in the short term, they will get ahead of you.</p>
+                <p>I want to be clear: <strong>AI is not inherently bad.</strong> It is insanely powerful at understanding and structuring data, and it can give you huge efficiency gains. You need to use AI the same way you needed to use computers, the internet, and modern software tools. When those came along, you couldn't afford not to use them, or you became obsolete and irrelevant to the market. AI is the same.</p>
+                <p>So you need to use AI. <strong>And you need to use AI responsibly.</strong> Responsible AI usage for companies is private AI. In the two aspects above: control over the model, and control over the data.</p>
+                <h2>How that actually works</h2>
+                <p>The short version. The long version belongs in the deployment piece.</p>
+                <p>For the model: open source, deployed privately. Either on your own servers (on-premise) or in a private cloud, where you rent a GPU and run the model yourself, or where you rent a managed service that runs the model for you. There are real trade-offs, but the options exist, and at least one of them fits almost every company.</p>
+                <p>For the data: connect the model to the data the company already has. Through APIs, CLIs, MCP servers, or whatever interface fits your existing software. Even better, take the chance to define your processes properly. Get information out of people's heads, into computers, written down, and organised. That alone makes the company more efficient.</p>
+                <p>And again: none of this has to substitute people. It works alongside them. It supercharges them. It frees up time for more important things.</p>
+                <p><strong>That is what private AI means for me.</strong></p>
             </div>
         </article>
     </main>

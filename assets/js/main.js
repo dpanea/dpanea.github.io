@@ -165,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             const emailInput = document.getElementById('email');
             const email = emailInput ? emailInput.value.trim() : '';
+            const scorecardUrl = leadForm.getAttribute('data-scorecard-url') || '';
 
             if (!email) return;
 
@@ -188,12 +189,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 leadForm.reset();
-                if (successMessage) successMessage.hidden = false;
+                if (successMessage) {
+                    const downloadLink = successMessage.querySelector('a');
+                    if (downloadLink && scorecardUrl) downloadLink.setAttribute('href', scorecardUrl);
+                    successMessage.hidden = false;
+                }
                 window.dispatchEvent(new CustomEvent('dp:analytics-event', {
                     detail: {
                         event: 'scorecard_form_success',
                         language: document.documentElement.lang || 'en',
-                        path: window.location.pathname
+                        path: window.location.pathname,
+                        scorecard_url: scorecardUrl
                     }
                 }));
             } catch (error) {
