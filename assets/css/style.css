@@ -89,6 +89,7 @@ h3 {
     font-weight: 300;
     letter-spacing: 0;
     line-height: 1.05;
+    text-wrap: balance;
 }
 
 h1 strong,
@@ -115,6 +116,7 @@ h3 {
 
 p {
     color: var(--fg-muted);
+    text-wrap: pretty;
 }
 
 .eyebrow,
@@ -143,6 +145,7 @@ p {
     min-width: 0;
     padding: 14px 22px;
     text-align: center;
+    text-wrap: balance;
     transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
     white-space: normal;
 }
@@ -184,6 +187,7 @@ p {
     font-weight: 500;
     gap: 8px;
     padding-bottom: 5px;
+    text-wrap: balance;
 }
 
 .text-link-light {
@@ -358,6 +362,7 @@ main {
     line-height: 1.45;
     margin-top: 30px;
     max-width: 720px;
+    text-wrap: balance;
 }
 
 .hero-actions {
@@ -543,6 +548,7 @@ main {
     line-height: 1.5;
     margin-top: 28px;
     max-width: 720px;
+    text-wrap: balance;
 }
 
 .section-cream {
@@ -567,8 +573,8 @@ main {
 
 .section-head {
     display: grid;
-    gap: 56px;
-    grid-template-columns: 220px 1fr;
+    gap: 48px;
+    grid-template-columns: 180px minmax(0, 1fr);
     margin-bottom: 58px;
 }
 
@@ -578,15 +584,16 @@ main {
     line-height: 1.58;
     margin-top: 24px;
     max-width: 760px;
+    text-wrap: pretty;
 }
 
 .services-heading {
     font-size: clamp(34px, 4.1vw, 56px);
-    max-width: 1040px;
+    max-width: 1100px;
 }
 
 .services-note {
-    max-width: 860px;
+    max-width: 900px;
 }
 
 .fit-heading {
@@ -852,6 +859,7 @@ main {
     font-size: 14px;
     line-height: 1.55;
     padding: 13px 0;
+    text-wrap: pretty;
 }
 
 .case-content dt {
