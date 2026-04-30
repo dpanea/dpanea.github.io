@@ -43,7 +43,15 @@
             },
             {
                 match: /^\/(?:impressum|privacy)\.html$/,
-                paths: { en: normalizedPath, de: '/de/', es: '/es/' }
+                paths: { en: normalizedPath, de: path.includes('privacy') ? '/de/datenschutz.html' : '/de/impressum.html', es: path.includes('privacy') ? '/es/privacidad.html' : '/es/aviso-legal.html' }
+            },
+            {
+                match: /^\/de\/(?:impressum|datenschutz)\.html$/,
+                paths: { en: normalizedPath.includes('datenschutz') ? '/privacy.html' : '/impressum.html', de: normalizedPath, es: normalizedPath.includes('datenschutz') ? '/es/privacidad.html' : '/es/aviso-legal.html' }
+            },
+            {
+                match: /^\/es\/(?:aviso-legal|privacidad)\.html$/,
+                paths: { en: normalizedPath.includes('privacidad') ? '/privacy.html' : '/impressum.html', de: normalizedPath.includes('privacidad') ? '/de/datenschutz.html' : '/de/impressum.html', es: normalizedPath }
             }
         ];
 

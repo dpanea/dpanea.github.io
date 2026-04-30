@@ -36,8 +36,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/case-studies.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/case-studies.html"/>
   </url>
-  <url><loc>https://danielpanea.com/de/case-studies.html</loc></url>
-  <url><loc>https://danielpanea.com/es/case-studies.html</loc></url>
+  <url>
+    <loc>https://danielpanea.com/de/case-studies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/case-studies.html"/>
+  </url>
+  <url>
+    <loc>https://danielpanea.com/es/case-studies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://danielpanea.com/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://danielpanea.com/de/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://danielpanea.com/es/case-studies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://danielpanea.com/case-studies.html"/>
+  </url>
   <url><loc>https://danielpanea.com/blog/</loc></url>
   <url><loc>https://danielpanea.com/blog/private-ai-control.html</loc></url>
   <url><loc>https://danielpanea.com/blog/shadow-ai-disaster-already-happening.html</loc></url>
@@ -47,5 +59,9 @@
   <url><loc>https://danielpanea.com/assets/downloads/scorecard-casos-de-uso-ia-daniel-panea-es.pdf</loc></url>
   <url><loc>https://danielpanea.com/impressum.html</loc></url>
   <url><loc>https://danielpanea.com/privacy.html</loc></url>
+  <url><loc>https://danielpanea.com/de/impressum.html</loc></url>
+  <url><loc>https://danielpanea.com/de/datenschutz.html</loc></url>
+  <url><loc>https://danielpanea.com/es/aviso-legal.html</loc></url>
+  <url><loc>https://danielpanea.com/es/privacidad.html</loc></url>
   <url><loc>https://danielpanea.com/llms.txt</loc></url>
 </urlset>

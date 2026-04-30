@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const KIT_FORM_ID = '8913239';
+    const DEFAULT_KIT_FORM_ID = '8913239';
     const KIT_API_KEY = 'cvO5g-EviPgxF0n7wWRLmw';
     const VIDEO_SRC = 'https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I';
 
@@ -113,6 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
             setPosition();
         });
 
+        track.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                event.preventDefault();
+                index -= 1;
+                setPosition();
+            }
+
+            if (event.key === 'ArrowRight') {
+                event.preventDefault();
+                index += 1;
+                setPosition();
+            }
+        });
+
         track.addEventListener('transitionend', resetIfNeeded);
 
         window.addEventListener('resize', () => {
@@ -165,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             const emailInput = document.getElementById('email');
             const email = emailInput ? emailInput.value.trim() : '';
-            const scorecardUrl = leadForm.getAttribute('data-scorecard-url') || '';
+            const kitFormId = leadForm.getAttribute('data-kit-form-id') || DEFAULT_KIT_FORM_ID;
 
             if (!email) return;
 
@@ -176,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             try {
-                const response = await fetch(`https://api.convertkit.com/v3/forms/${KIT_FORM_ID}/subscribe`, {
+                const response = await fetch(`https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ api_key: KIT_API_KEY, email })
@@ -190,8 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 leadForm.reset();
                 if (successMessage) {
-                    const downloadLink = successMessage.querySelector('a');
-                    if (downloadLink && scorecardUrl) downloadLink.setAttribute('href', scorecardUrl);
                     successMessage.hidden = false;
                 }
                 window.dispatchEvent(new CustomEvent('dp:analytics-event', {
@@ -199,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         event: 'scorecard_form_success',
                         language: document.documentElement.lang || 'en',
                         path: window.location.pathname,
-                        scorecard_url: scorecardUrl
+                        kit_form_id: kitFormId
                     }
                 }));
             } catch (error) {
@@ -209,6 +221,77 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } finally {
                 submitButton.disabled = false;
+            }
+        });
+    }
+
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const spamField = contactForm.querySelector('[name="website"]');
+            if (spamField && spamField.value) return;
+
+            const formData = new FormData(contactForm);
+            const language = document.documentElement.lang || 'en';
+            const labels = {
+                en: {
+                    subject: 'Private AI workflow inquiry',
+                    sent: 'Your email client should open with the structured inquiry. If it does not, please use the email button above.',
+                    fields: {
+                        name: 'Name',
+                        company: 'Company',
+                        email: 'Email',
+                        workflow: 'Workflow',
+                        data: 'Data involved',
+                        stage: 'Stage',
+                        language: 'Preferred language',
+                        message: 'Anything else'
+                    }
+                },
+                de: {
+                    subject: 'Anfrage zu privater KI',
+                    sent: 'Ihr E-Mail-Programm sollte sich mit der strukturierten Anfrage öffnen. Falls nicht, nutzen Sie bitte den E-Mail-Button oben.',
+                    fields: {
+                        name: 'Name',
+                        company: 'Unternehmen',
+                        email: 'E-Mail',
+                        workflow: 'Ablauf',
+                        data: 'Daten',
+                        stage: 'Phase',
+                        language: 'Bevorzugte Sprache',
+                        message: 'Weitere Informationen'
+                    }
+                },
+                es: {
+                    subject: 'Consulta sobre IA privada',
+                    sent: 'Tu cliente de email debería abrirse con la consulta estructurada. Si no se abre, usa el botón de email de arriba.',
+                    fields: {
+                        name: 'Nombre',
+                        company: 'Empresa',
+                        email: 'Email',
+                        workflow: 'Workflow',
+                        data: 'Datos implicados',
+                        stage: 'Fase',
+                        language: 'Idioma preferido',
+                        message: 'Algo más'
+                    }
+                }
+            };
+            const copy = labels[language] || labels.en;
+            const body = ['name', 'company', 'email', 'workflow', 'data', 'stage', 'language', 'message']
+                .map((key) => `${copy.fields[key]}: ${formData.get(key) || ''}`)
+                .join('\n\n');
+            const recipient = ['me', 'danielpanea.com'].join('@');
+            const mailto = `mailto:${recipient}?subject=${encodeURIComponent(copy.subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailto;
+
+            const note = document.getElementById('contact-form-note');
+            if (note) {
+                note.hidden = false;
+                note.textContent = copy.sent;
             }
         });
     }

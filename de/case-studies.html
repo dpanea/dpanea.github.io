@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fallstudien - Daniel Panea</title>
     <meta name="description" content="Ausgewählte Fallstudien zu privaten KI-Arbeitsabläufen von Daniel Panea.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fallstudien - Daniel Panea">
+    <meta property="og:description" content="Ausgewählte Fallstudien zu privaten KI-Arbeitsabläufen von Daniel Panea.">
+    <meta property="og:image" content="https://danielpanea.com/assets/images/DSC00127_cropped_centered.JPG">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://danielpanea.com/de/case-studies.html">
     <link rel="alternate" hreflang="en" href="https://danielpanea.com/case-studies.html">
     <link rel="alternate" hreflang="de" href="https://danielpanea.com/de/case-studies.html">
@@ -15,6 +22,18 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../assets/images/dp-logo.svg">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Fallstudien zu privater KI",
+        "itemListElement": [
+            {"@type": "Article", "position": 1, "headline": "IT-Service-Management-Automatisierung", "image": "https://danielpanea.com/assets/images/itsm_dashboard_horizontal.jpg", "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}},
+            {"@type": "Article", "position": 2, "headline": "KI für Bildung", "image": "https://danielpanea.com/assets/images/eduaction_horizontal.jpg", "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}},
+            {"@type": "Article", "position": 3, "headline": "Synthetic Data Engine", "image": "https://danielpanea.com/assets/images/synthetic_data_horizontal.jpg", "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}}
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="site-header" id="site-header">
@@ -53,7 +72,7 @@
         <section class="section section-cream">
             <div class="section-inner case-list">
                 <article class="case-card case-card-reverse reveal" id="itsm">
-                    <img src="../assets/images/itsm_dashboard_horizontal.jpg" alt="IT-Service-Management-Dashboard" loading="lazy">
+                    <img src="../assets/images/itsm_dashboard_horizontal.jpg" alt="Dashboard mit Clustern wiederkehrender IT-Tickets nach Ursache" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Öffentlicher Sektor & Enterprise</p>
                         <h3>IT-Service-Management-Automatisierung.</h3>
@@ -62,12 +81,12 @@
                             <dt>Problem</dt><dd>Ein chaotischer Backlog aus Support-Tickets mit gemischten Medien machte wiederkehrende Probleme, Ursachen und operative Prioritäten schwer sichtbar.</dd>
                             <dt>Rahmen-<br>bedingungen</dt><dd>Der Ablauf enthielt interne operative Daten und musste Anforderungen an Datensouveränität strikt respektieren.</dd>
                             <dt>System</dt><dd>Eine sichere lokale Open-Source-KI-Pipeline mit OCR und LLMs, um Anhänge zu verarbeiten, Ticketinhalte zusammenzufassen, Probleme zu clustern und Ursachen über ein Dashboard sichtbar zu machen.</dd>
-                            <dt>Ergebnis</dt><dd>Das System ermöglichte automatisierte Ticket-Triage, bewahrte 100% Datensouveränität und schuf Kapazität für strategischere Arbeit im IT-Helpdesk.</dd>
+                            <dt>Ergebnis</dt><dd>Das System ermöglichte automatisierte Ticket-Triage, bewahrte 100% Datensouveränität und machte wiederkehrende Probleme sichtbar, die vorher manuell gesucht werden mussten.</dd>
                         </dl>
                     </div>
                 </article>
                 <article class="case-card reveal" id="education-feedback">
-                    <img src="../assets/images/eduaction_horizontal.jpg" alt="Bildungsplattform für Feedback" loading="lazy">
+                    <img src="../assets/images/eduaction_horizontal.jpg" alt="Bildungsplattform zur Unterstützung von Feedback auf studentische Texte" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Education Tech</p>
                         <h3>KI für Bildung.</h3>
@@ -76,12 +95,12 @@
                             <dt>Problem</dt><dd>Lehrkräfte mussten skalierbares, personalisiertes Feedback zu studentischen Texten geben, ohne in repetitiver Bewertungsarbeit unterzugehen.</dd>
                             <dt>Rahmen-<br>bedingungen</dt><dd>KI konnte den Ablauf unterstützen, aber pädagogisches Urteil und menschliche Prüfung mussten im Lernprozess zentral bleiben.</dd>
                             <dt>System</dt><dd>Zusammenarbeit mit Mark My Words zum Aufbau einer Backend-Infrastruktur mit RAG-Modellen, feinabgestimmten LLMs und asynchronen Pipelines für die Nutzung im Unterricht.</dd>
-                            <dt>Ergebnis</dt><dd>Die Plattform kann Bewertung auf niedriger Ebene automatisieren, verzögerte Feedback-Schleifen durch Echtzeit-Feedback ersetzen und Lehrkräften mehr Zeit für höherwertige pädagogische Entscheidungen geben.</dd>
+                            <dt>Ergebnis</dt><dd>Die Plattform kann Bewertung auf niedriger Ebene automatisieren, Feedback-Schleifen verkürzen und Lehrkräften mehr Zeit für höherwertige pädagogische Entscheidungen geben.</dd>
                         </dl>
                     </div>
                 </article>
                 <article class="case-card case-card-reverse reveal" id="synthetic-data">
-                    <img src="../assets/images/synthetic_data_horizontal.jpg" alt="Visualisierung synthetischer Daten" loading="lazy">
+                    <img src="../assets/images/synthetic_data_horizontal.jpg" alt="Visualisierung synthetischer Daten für datenschutzfreundliche Modellvalidierung" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Datenschutztechnologie</p>
                         <h3>Synthetic Data Engine.</h3>
@@ -90,7 +109,7 @@
                             <dt>Problem</dt><dd>Modelle und Pipelines mussten validiert werden, aber echte Daten konnten aus Datenschutzgründen nicht genutzt werden und einfache Testdaten waren nicht realistisch genug.</dd>
                             <dt>Rahmen-<br>bedingungen</dt><dd>Die generierten Daten mussten nützliche Verteilungen, Edge Cases und Verhaltensmuster bewahren, ohne sensible Datensätze offenzulegen.</dd>
                             <dt>System</dt><dd>Statistische und logische Analyse realer Datenstrukturen, anschließend Erzeugung synthetischer Datensätze mit hoher Realitätsnähe, die Verteilungen, Edge Cases und Nutzerverhalten bewahren.</dd>
-                            <dt>Ergebnis</dt><dd>Das Team konnte Datenabläufe ohne Offenlegung sensibler Daten testen und validieren, während realistisches Verhalten für Engineering und Modellevaluation erhalten blieb.</dd>
+                            <dt>Ergebnis</dt><dd>Das Team konnte Datenabläufe ohne Offenlegung sensibler Daten testen und validieren und dabei realistisches Verhalten für Engineering und Modellevaluation erhalten.</dd>
                         </dl>
                     </div>
                 </article>
@@ -111,7 +130,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div><p class="footer-brand">Daniel <strong>Panea</strong></p><p>Private KI für Unternehmen, die ihre Daten ernst nehmen.</p></div>
-            <nav class="footer-links" aria-label="Footer-Navigation"><a href="../impressum.html">Impressum</a><a href="../privacy.html">Datenschutz</a></nav>
+            <nav class="footer-links" aria-label="Footer-Navigation"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
             <p class="footer-bottom">&copy; 2026 Daniel Panea. In Europa ansässig.</p>
         </div>
     </footer>

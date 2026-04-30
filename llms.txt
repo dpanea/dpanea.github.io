@@ -19,7 +19,7 @@ I help companies identify, build, deploy, and optimize private AI systems that c
 - IT Service Management Automation: local AI pipeline for support-ticket triage and root-cause discovery, in collaboration with DigitFlow.
 - AI for Education: backend and AI infrastructure for Mark My Words.
 - Synthetic Data Engine: privacy-preserving synthetic datasets for validation and testing.
-- Conference Keynote: sovereign AI strategy and private AI adoption in Europe.
+- Conference Keynote: private AI adoption and data-control strategy in Europe.
 
 ## Scorecard
 

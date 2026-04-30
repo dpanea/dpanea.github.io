@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Case Studies - Daniel Panea</title>
     <meta name="description" content="Selected private AI workflow case studies by Daniel Panea.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Case Studies - Daniel Panea">
+    <meta property="og:description" content="Selected private AI workflow case studies by Daniel Panea.">
+    <meta property="og:image" content="https://danielpanea.com/assets/images/DSC00127_cropped_centered.JPG">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://danielpanea.com/case-studies.html">
     <link rel="alternate" hreflang="en" href="https://danielpanea.com/case-studies.html">
     <link rel="alternate" hreflang="de" href="https://danielpanea.com/de/case-studies.html">
@@ -15,6 +22,36 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/images/dp-logo.svg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Private AI case studies",
+        "itemListElement": [
+            {
+                "@type": "Article",
+                "position": 1,
+                "headline": "IT Service Management Automation",
+                "image": "https://danielpanea.com/assets/images/itsm_dashboard_horizontal.jpg",
+                "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}
+            },
+            {
+                "@type": "Article",
+                "position": 2,
+                "headline": "AI for Education",
+                "image": "https://danielpanea.com/assets/images/eduaction_horizontal.jpg",
+                "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}
+            },
+            {
+                "@type": "Article",
+                "position": 3,
+                "headline": "Synthetic Data Engine",
+                "image": "https://danielpanea.com/assets/images/synthetic_data_horizontal.jpg",
+                "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="site-header" id="site-header">
@@ -59,7 +96,7 @@
         <section class="section section-cream">
             <div class="section-inner case-list">
                 <article class="case-card case-card-reverse reveal" id="itsm">
-                    <img src="assets/images/itsm_dashboard_horizontal.jpg" alt="IT service management dashboard" loading="lazy">
+                    <img src="assets/images/itsm_dashboard_horizontal.jpg" alt="Dashboard showing recurring IT ticket clusters by root cause" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Public sector & enterprise</p>
                         <h3>IT Service Management Automation.</h3>
@@ -68,17 +105,17 @@
                             <dt>Problem</dt>
                             <dd>A chaotic backlog of mixed-media support tickets made recurring problems, root causes, and operational priorities hard to see.</dd>
                             <dt>Constraint</dt>
-                            <dd>The workflow involved internal operational data and had to strictly respect data sovereignty requirements.</dd>
+                            <dd>The workflow involved internal operational data and had to strictly respect data control requirements.</dd>
                             <dt>System</dt>
                             <dd>Built a secure local open-source AI pipeline using OCR and LLMs to digest attachments, summarize ticket content, cluster issues, and surface root causes through a dashboard.</dd>
                             <dt>Result</dt>
-                            <dd>The system enabled automated ticket triage, preserved 100% data sovereignty, and freed IT helpdesk capacity for more strategic work.</dd>
+                            <dd>The system enabled automated ticket triage, preserved 100% data control, and gave the helpdesk a dashboard-level view of recurring issues that previously required manual review.</dd>
                         </dl>
                     </div>
                 </article>
 
                 <article class="case-card reveal" id="education-feedback">
-                    <img src="assets/images/eduaction_horizontal.jpg" alt="Education feedback platform" loading="lazy">
+                    <img src="assets/images/eduaction_horizontal.jpg" alt="Education platform interface supporting student writing feedback" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Education tech</p>
                         <h3>AI for Education.</h3>
@@ -91,13 +128,13 @@
                             <dt>System</dt>
                             <dd>Collaborated with Mark My Words to build backend infrastructure integrating RAG models, fine-tuned LLMs, and asynchronous pipelines for classroom-scale traffic.</dd>
                             <dt>Result</dt>
-                            <dd>The platform can automate low-level grading, replace delayed feedback loops with real-time feedback, and preserve teacher time for higher-value educational judgment.</dd>
+                            <dd>The platform can automate low-level grading, shorten feedback loops, and preserve teacher time for higher-value educational judgment.</dd>
                         </dl>
                     </div>
                 </article>
 
                 <article class="case-card case-card-reverse reveal" id="synthetic-data">
-                    <img src="assets/images/synthetic_data_horizontal.jpg" alt="Synthetic data visualization" loading="lazy">
+                    <img src="assets/images/synthetic_data_horizontal.jpg" alt="Synthetic dataset visualization for privacy-preserving model validation" loading="lazy">
                     <div class="case-content">
                         <p class="eyebrow">Privacy tech</p>
                         <h3>Synthetic Data Engine.</h3>
@@ -110,7 +147,7 @@
                             <dt>System</dt>
                             <dd>Conducted statistical and logical analysis of real data structures, then recreated high-fidelity synthetic datasets that preserved useful distributions, edge cases, and user behavior patterns.</dd>
                             <dt>Result</dt>
-                            <dd>The team could test and validate data workflows with zero sensitive data exposure while maintaining realistic behavior for engineering and model evaluation.</dd>
+                            <dd>The team could test and validate data workflows with zero sensitive data exposure while keeping realistic behavior for engineering and model evaluation.</dd>
                         </dl>
                     </div>
                 </article>
