@@ -1152,7 +1152,8 @@ main {
     color: var(--ink-900);
 }
 
-.article-inner em {
+.article-inner em,
+article em {
     font-style: normal;
     font-weight: 600;
 }
