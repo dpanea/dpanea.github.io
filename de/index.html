@@ -26,7 +26,7 @@
     <link rel="alternate" hreflang="x-default" href="https://danielpanea.com/">
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="icon" type="image/svg+xml" href="../assets/images/dp-logo.svg">
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260504-audit1">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260504-deploy1">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -435,7 +435,7 @@
                     </div>
                     <form class="scorecard-form" id="lead-form" data-kit-form-id="9387690">
                         <label for="email">Business-E-Mail</label>
-                        <input id="email" name="email" type="email" placeholder="you@company.com" required>
+                        <input id="email" name="email_address" type="email" placeholder="you@company.com" required>
                         <button id="submit-btn" type="submit" data-analytics-event="scorecard_submit_click_de">Scorecard zusenden</button>
                         <p class="form-note" id="success-message" hidden>Prüfen Sie Ihre E-Mail und bestätigen Sie Ihre Anmeldung, um die Scorecard zu erhalten.</p>
                         <p class="form-note form-note-error" id="error-message" hidden></p>
@@ -561,11 +561,11 @@
                 <form class="contact-form" id="contact-form" data-kit-form-id="9387998">
                     <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div class="contact-form__grid">
-                        <label>Name<input name="name" type="text" autocomplete="name" required></label>
-                        <label>Unternehmen<input name="company" type="text" autocomplete="organization"></label>
-                        <label>E-Mail<input name="email" type="email" autocomplete="email" required></label>
+                        <label>Name<input name="fields[first_name]" type="text" autocomplete="name" required></label>
+                        <label>Unternehmen<input name="fields[company]" type="text" autocomplete="organization"></label>
+                        <label>E-Mail<input name="email_address" type="email" autocomplete="email" required></label>
                         <label>Wo stehen Sie?
-                            <select name="stage" required>
+                            <select name="fields[stage]" required>
                                 <option value="">Bitte auswählen</option>
                                 <option>Assessment / noch unsicher</option>
                                 <option>Erster Pilot</option>
@@ -574,17 +574,17 @@
                                 <option>Schulung oder Workshop</option>
                             </select>
                         </label>
-                        <label class="full-width">Welchen Arbeitsablauf möchten Sie verbessern?<textarea name="workflow" required></textarea></label>
-                        <label class="full-width">Welche Art von Daten ist beteiligt?<textarea name="data"></textarea></label>
+                        <label class="full-width">Welchen Arbeitsablauf möchten Sie verbessern?<textarea name="fields[workflow]" required></textarea></label>
+                        <label class="full-width">Welche Art von Daten ist beteiligt?<textarea name="fields[data]"></textarea></label>
                         <label>Bevorzugte Sprache
-                            <select name="language">
+                            <select name="fields[language]">
                                 <option>Deutsch</option>
                                 <option>English</option>
                                 <option>Español</option>
                                 <option>Italiano</option>
                             </select>
                         </label>
-                        <label class="full-width">Sonst noch etwas?<textarea name="message"></textarea></label>
+                        <label class="full-width">Sonst noch etwas?<textarea name="fields[message]"></textarea></label>
                     </div>
                     <button class="btn btn-primary" type="submit" data-analytics-event="contact_form_submit_de">Anfrage senden</button>
                     <p class="form-note" id="contact-form-note" hidden></p>

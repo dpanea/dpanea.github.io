@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const DEFAULT_KIT_FORM_ID = '8913239';
     const DEFAULT_CONTACT_FORM_ID = '9387998';
-    const KIT_API_KEY = 'cvO5g-EviPgxF0n7wWRLmw';
+    const KIT_SUBMIT_TARGET = 'kit-submit-frame';
     const VIDEO_SRC = 'https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I';
 
     const navToggle = document.getElementById('nav-toggle');
@@ -175,14 +175,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMessage = document.getElementById('success-message');
     const errorMessage = document.getElementById('error-message');
 
-    if (leadForm && submitButton) {
-        leadForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
-            const emailInput = document.getElementById('email');
-            const email = emailInput ? emailInput.value.trim() : '';
-            const kitFormId = leadForm.getAttribute('data-kit-form-id') || DEFAULT_KIT_FORM_ID;
+    const ensureKitFrame = () => {
+        let frame = document.querySelector(`iframe[name="${KIT_SUBMIT_TARGET}"]`);
+        if (!frame) {
+            frame = document.createElement('iframe');
+            frame.name = KIT_SUBMIT_TARGET;
+            frame.title = 'Kit form submission';
+            frame.hidden = true;
+            document.body.appendChild(frame);
+        }
+        return frame;
+    };
 
-            if (!email) return;
+    const configureKitForm = (form, fallbackFormId) => {
+        const kitFormId = form.getAttribute('data-kit-form-id') || fallbackFormId;
+        form.setAttribute('method', 'post');
+        form.setAttribute('action', `https://app.kit.com/forms/${kitFormId}/subscriptions`);
+        form.setAttribute('target', KIT_SUBMIT_TARGET);
+        return kitFormId;
+    };
+
+    if (leadForm && submitButton) {
+        const kitFormId = configureKitForm(leadForm, DEFAULT_KIT_FORM_ID);
+
+        leadForm.addEventListener('submit', () => {
+            ensureKitFrame();
 
             submitButton.disabled = true;
             if (errorMessage) {
@@ -190,23 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorMessage.textContent = '';
             }
 
-            try {
-                const response = await fetch(`https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ api_key: KIT_API_KEY, email })
-                });
-
-                const data = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(data.message || 'Subscription failed');
-                }
-
+            window.setTimeout(() => {
                 leadForm.reset();
                 if (successMessage) {
                     successMessage.hidden = false;
                 }
+                submitButton.disabled = false;
                 window.dispatchEvent(new CustomEvent('dp:analytics-event', {
                     detail: {
                         event: 'scorecard_form_success',
@@ -215,27 +221,22 @@ document.addEventListener('DOMContentLoaded', () => {
                         kit_form_id: kitFormId
                     }
                 }));
-            } catch (error) {
-                if (errorMessage) {
-                    errorMessage.textContent = error.message || 'Something went wrong. Please try again.';
-                    errorMessage.hidden = false;
-                }
-            } finally {
-                submitButton.disabled = false;
-            }
+            }, 900);
         });
     }
 
     const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', async (event) => {
-            event.preventDefault();
+        const kitFormId = configureKitForm(contactForm, DEFAULT_CONTACT_FORM_ID);
 
+        contactForm.addEventListener('submit', (event) => {
             const spamField = contactForm.querySelector('[name="website"]');
-            if (spamField && spamField.value) return;
+            if (spamField && spamField.value) {
+                event.preventDefault();
+                return;
+            }
 
-            const formData = new FormData(contactForm);
             const language = document.documentElement.lang || 'en';
             const labels = {
                 en: {
@@ -254,8 +255,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const copy = labels[language] || labels.en;
             const note = document.getElementById('contact-form-note');
             const submit = contactForm.querySelector('[type="submit"]');
-            const kitFormId = contactForm.getAttribute('data-kit-form-id') || DEFAULT_CONTACT_FORM_ID;
 
+            ensureKitFrame();
             if (note) {
                 note.hidden = true;
                 note.classList.remove('form-note-error');
@@ -263,31 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (submit) submit.disabled = true;
 
-            try {
-                const response = await fetch(`https://api.convertkit.com/v3/forms/${kitFormId}/subscribe`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        api_key: KIT_API_KEY,
-                        email: String(formData.get('email') || '').trim(),
-                        first_name: String(formData.get('name') || '').trim(),
-                        fields: {
-                            company: String(formData.get('company') || '').trim(),
-                            workflow: String(formData.get('workflow') || '').trim(),
-                            data: String(formData.get('data') || '').trim(),
-                            stage: String(formData.get('stage') || '').trim(),
-                            language: String(formData.get('language') || '').trim(),
-                            message: String(formData.get('message') || '').trim()
-                        }
-                    })
-                });
-
-                const data = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(data.message || copy.error);
-                }
-
+            window.setTimeout(() => {
                 contactForm.reset();
                 if (note) {
                     note.textContent = copy.success;
@@ -301,15 +278,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         kit_form_id: kitFormId
                     }
                 }));
-            } catch (error) {
-                if (note) {
-                    note.textContent = error.message || copy.error;
-                    note.classList.add('form-note-error');
-                    note.hidden = false;
-                }
-            } finally {
                 if (submit) submit.disabled = false;
-            }
+            }, 900);
         });
     }
 });
