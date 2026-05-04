@@ -694,6 +694,10 @@ main {
     margin-bottom: 18px;
 }
 
+.signal h3 {
+    min-height: 52px;
+}
+
 .signal p,
 .insight-card p {
     font-size: 15px;
@@ -741,38 +745,45 @@ main {
 
 .stage {
     background: var(--bg-elev);
-    display: flex;
-    flex-direction: column;
-    padding: 32px 26px;
+    display: grid;
+    grid-template-rows: auto auto 38px minmax(104px, auto) minmax(92px, auto) auto;
+    padding: 26px 26px 24px;
 }
 
 .stage h3 {
-    font-size: 30px;
-    margin-bottom: 8px;
+    font-size: 29px;
+    margin-bottom: 4px;
+}
+
+.stage .stage-num {
+    font-size: 11px;
+    margin-bottom: 14px;
 }
 
 .stage-offer {
     color: var(--ink-500);
     font-size: 13px;
     font-weight: 500;
-    margin-bottom: 22px;
-    min-height: 42px;
+    line-height: 1.35;
+    margin-bottom: 0;
+    min-height: 0;
 }
 
 .stage-copy,
 .stage-result {
     font-size: 14px;
+    line-height: 1.52;
 }
 
 .stage-copy {
-    min-height: 136px;
+    min-height: 0;
 }
 
 .stage-result {
     color: var(--ink-700);
-    margin-bottom: 34px;
-    margin-top: 18px;
-    min-height: 104px;
+    margin-bottom: 18px;
+    margin-top: 0;
+    min-height: 0;
 }
 
 .stage a {
@@ -781,9 +792,9 @@ main {
     font-family: var(--font-mono);
     font-size: 11px;
     letter-spacing: 0.12em;
-    margin-top: auto;
-    min-height: 62px;
-    padding-top: 24px;
+    margin-top: 0;
+    min-height: 46px;
+    padding-top: 16px;
     text-transform: uppercase;
 }
 
@@ -1262,6 +1273,50 @@ main {
     line-height: 1.68;
     margin-top: 26px;
     max-width: 780px;
+}
+
+.blog-index-hero {
+    padding-bottom: 72px;
+    padding-top: 88px;
+}
+
+.blog-index-hero h1 {
+    font-size: clamp(40px, 5vw, 66px);
+    max-width: 900px;
+}
+
+.blog-index-hero .page-intro {
+    font-size: clamp(17px, 1.8vw, 21px);
+    max-width: 680px;
+}
+
+.blog-index {
+    padding-bottom: 88px;
+    padding-top: 88px;
+}
+
+.blog-index .article-preview {
+    padding: clamp(24px, 3.4vw, 40px);
+}
+
+.blog-index .article-preview + .article-preview {
+    margin-top: 18px;
+}
+
+.blog-index .article-preview h2 {
+    font-size: clamp(25px, 3vw, 36px);
+    max-width: 760px;
+}
+
+.blog-index .article-preview p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.58;
+    margin-top: 18px;
+    max-width: 720px;
+}
+
+.blog-index .article-preview .text-link {
+    margin-top: 18px;
 }
 
 .about-grid {
@@ -1885,6 +1940,12 @@ main {
         min-height: 0;
     }
 
+    .stage {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
     .stage-offer,
     .stage-result,
     .stage a {
@@ -1901,6 +1962,10 @@ main {
     .cred-grid,
     .contact-form__grid {
         grid-template-columns: 1fr;
+    }
+
+    .signal h3 {
+        min-height: 0;
     }
 
     .supporting-offer {
