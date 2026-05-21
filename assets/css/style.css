@@ -852,6 +852,7 @@ main {
     aspect-ratio: 4 / 3;
     background: var(--ink-800);
     border-radius: var(--radius-sm);
+    height: 100%;
     object-fit: cover;
     width: 100%;
 }
