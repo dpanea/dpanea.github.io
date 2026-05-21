@@ -19,7 +19,15 @@ I help companies identify, build, deploy, and optimize private AI systems that c
 - IT Service Management Automation: local AI pipeline for support-ticket triage and root-cause discovery, in collaboration with DigitFlow.
 - AI for Education: backend and AI infrastructure for Mark My Words.
 - Synthetic Data Engine: privacy-preserving synthetic datasets for validation and testing.
+- The Company Knowledge AI: open-source reference architecture and live synthetic demo of a private assistant that answers from a company's own knowledge with a citation for every claim.
 - Conference Keynote: private AI adoption and data-control strategy in Europe.
+
+## Live Demo
+
+The Company Knowledge AI is a public, synthetic demo of a private assistant that ingests emails, PDFs, Word documents, meeting transcripts, and policy memos, indexes them in Postgres with hybrid retrieval, and synthesizes source-backed answers. The full reference architecture is published open-source.
+
+- Live demo: https://demo.danielpanea.com
+- Source code: https://github.com/dpanea/private-company-ai-demo
 
 ## Scorecard
 
@@ -49,4 +57,5 @@ Current topics include private AI, data boundaries, workflow-first implementatio
 - German Case Studies: https://danielpanea.com/de/case-studies.html
 - Spanish Case Studies: https://danielpanea.com/es/case-studies.html
 - Blog: https://danielpanea.com/blog/
+- Live Demo: https://demo.danielpanea.com
 - Contact / Assessment: https://calendly.com/daniel-panea/discovery-call

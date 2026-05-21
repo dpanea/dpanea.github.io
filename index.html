@@ -60,6 +60,7 @@
                 <a href="index.html">Home</a>
                 <a href="#services">Services</a>
                 <a href="case-studies.html">Case studies</a>
+                <a href="https://demo.danielpanea.com" target="_blank" rel="noopener noreferrer" data-analytics-event="live_demo_nav_click">Live demo</a>
                 <a href="#scorecard">Scorecard</a>
                 <a href="blog/">Blog</a>
                 <a href="#about">About</a>
@@ -313,6 +314,25 @@
                         </div>
                     </article>
                     <article class="case-card reveal">
+                        <img src="assets/images/company-knowledge-ai-horizontal.jpg" alt="The Company Knowledge AI demo interface" loading="lazy" width="1440" height="1050">
+                        <div class="case-content">
+                            <p class="eyebrow">Open-source reference</p>
+                            <h3>The Company Knowledge AI.</h3>
+                            <p class="case-subtitle">Public, synthetic demo of a private assistant that answers from a company's own knowledge, with a citation for every claim. <a href="https://demo.danielpanea.com" target="_blank" rel="noopener noreferrer">Try the live demo</a>.</p>
+                            <dl>
+                                <dt>Problem</dt>
+                                <dd>The answers a team needs live across emails, PDFs, meeting notes, internal policies, decision memos, and vendor contracts. Generic chat tools cannot see any of it, and pasting it in is not an option.</dd>
+                                <dt>Constraint</dt>
+                                <dd>The useful context is the sensitive context, so the architecture has to stay on infrastructure the company controls, with citations a human can verify before acting.</dd>
+                                <dt>System</dt>
+                                <dd>Multi-format ingestion (incl. OCR), one normalized knowledge layer in Postgres with hybrid full-text and pgvector retrieval, and a synthesis step whose answers are refused when they cannot be cited.</dd>
+                                <dt>Result</dt>
+                                <dd>A working blueprint published end to end: scattered artifacts become a private knowledge layer, and a synthesized answer cites every email, memo, contract, or transcript it used.</dd>
+                            </dl>
+                            <a class="text-link case-link" href="https://demo.danielpanea.com" target="_blank" rel="noopener noreferrer" data-analytics-event="live_demo_card_click">Open the live demo</a>
+                        </div>
+                    </article>
+                    <article class="case-card case-card-reverse reveal">
                         <img src="assets/images/eduaction_horizontal.jpg" alt="Education feedback platform" loading="lazy" width="4000" height="2649">
                         <div class="case-content">
                             <p class="eyebrow">Education tech</p>
