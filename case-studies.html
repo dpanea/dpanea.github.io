@@ -46,6 +46,13 @@
                 "headline": "Synthetic Data Engine",
                 "image": "https://danielpanea.com/assets/images/synthetic_data_horizontal.jpg",
                 "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}
+            },
+            {
+                "@type": "Article",
+                "position": 4,
+                "headline": "The Company Knowledge AI",
+                "image": "https://danielpanea.com/assets/images/company-knowledge-ai-horizontal.jpg",
+                "author": {"@type": "Person", "name": "Daniel Panea", "url": "https://danielpanea.com/"}
             }
         ]
     }
@@ -63,6 +70,7 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#services">Services</a>
                 <a href="case-studies.html">Case studies</a>
+                <a href="https://demo.danielpanea.com" target="_blank" rel="noopener noreferrer" data-analytics-event="live_demo_nav_click">Live demo</a>
                 <a href="index.html#scorecard">Scorecard</a>
                 <a href="blog/">Blog</a>
                 <a href="index.html#about">About</a>
@@ -128,6 +136,25 @@
                             <dd>Collaborated with Mark My Words to build backend infrastructure integrating RAG models, fine-tuned LLMs, and asynchronous pipelines for classroom-scale traffic.</dd>
                             <dt>Result</dt>
                             <dd>Personalized feedback on student writing now moves through an automated pipeline with explicit educator review before final delivery.</dd>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="case-card reveal" id="company-knowledge-ai">
+                    <img src="assets/images/company-knowledge-ai-horizontal.jpg" alt="The Company Knowledge AI demo interface showing source-backed answers" loading="lazy" width="1440" height="1050" style="object-position: left center;">
+                    <div class="case-content">
+                        <p class="eyebrow">Open-source reference</p>
+                        <h3>The Company Knowledge AI.</h3>
+                        <p class="case-subtitle">Public, synthetic demo of a private assistant that answers from a company's own knowledge, with a citation for every claim. <a href="https://demo.danielpanea.com" target="_blank" rel="noopener noreferrer">Try the live demo</a> or <a href="https://github.com/dpanea/private-company-ai-demo" target="_blank" rel="noopener noreferrer">read the source</a>.</p>
+                        <dl>
+                            <dt>Problem</dt>
+                            <dd>The answers a team needs live across emails, PDFs, meeting notes, internal policies, decision memos, and vendor contracts. Generic chat tools cannot see any of it, and pasting sensitive context into a cloud tool is not an option for most companies.</dd>
+                            <dt>Constraint</dt>
+                            <dd>The useful context is almost always the sensitive context. The architecture has to run on infrastructure the company controls, and every answer has to be traceable back to a source a human can verify before acting.</dd>
+                            <dt>System</dt>
+                            <dd>Multi-format ingestion including OCR for scanned PDFs, one normalized knowledge layer in Postgres with hybrid full-text and pgvector retrieval, and a synthesis step that refuses answers it cannot cite. The full stack ships as an open-source reference architecture.</dd>
+                            <dt>Result</dt>
+                            <dd>A working blueprint published end to end: scattered emails, PDFs, handbooks, contracts, and meeting transcripts become a private knowledge layer, and synthesized answers cite the exact artifact behind every claim.</dd>
                         </dl>
                     </div>
                 </article>
