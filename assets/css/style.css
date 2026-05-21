@@ -837,6 +837,7 @@ main {
     display: grid;
     gap: 64px;
     grid-template-columns: 0.9fr 1.1fr;
+    min-height: 460px;
     padding: 60px 0;
 }
 
@@ -1936,6 +1937,10 @@ article em {
     .case-card {
         gap: 24px;
         grid-template-columns: 1fr;
+    }
+
+    .case-card {
+        min-height: 0;
     }
 
     .stage-copy {
