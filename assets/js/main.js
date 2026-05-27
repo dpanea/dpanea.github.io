@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (leadForm && submitButton) {
         const kitFormId = configureKitForm(leadForm, DEFAULT_KIT_FORM_ID);
+        const successEvent = leadForm.getAttribute('data-success-event') || 'scorecard_form_success';
 
         leadForm.addEventListener('submit', () => {
             ensureKitFrame();
@@ -215,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitButton.disabled = false;
                 window.dispatchEvent(new CustomEvent('dp:analytics-event', {
                     detail: {
-                        event: 'scorecard_form_success',
+                        event: successEvent,
                         language: document.documentElement.lang || 'en',
                         path: window.location.pathname,
                         kit_form_id: kitFormId

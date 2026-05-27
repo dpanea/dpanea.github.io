@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Five Layers - Daniel Panea</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 18mm;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: #0a1a2f;
+            font-family: "IBM Plex Sans", Arial, sans-serif;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        .page {
+            break-after: page;
+            min-height: 261mm;
+            position: relative;
+        }
+
+        .page:last-child {
+            break-after: auto;
+        }
+
+        .eyebrow,
+        footer {
+            color: #4a5c75;
+            font-size: 9px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 54px;
+            font-weight: 300;
+            line-height: 0.98;
+            max-width: 430px;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-weight: 300;
+            line-height: 1.05;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.15;
+            margin-bottom: 8px;
+        }
+
+        .lead {
+            color: #1b3252;
+            font-size: 18px;
+            line-height: 1.45;
+            margin-top: 20px;
+            max-width: 460px;
+        }
+
+        .diagram {
+            aspect-ratio: 1;
+            margin: 36px auto 0;
+            max-width: 430px;
+            position: relative;
+        }
+
+        .ring {
+            border: 1.3px solid #0a1a2f;
+            border-radius: 50%;
+            display: grid;
+            inset: var(--inset);
+            place-items: start center;
+            position: absolute;
+        }
+
+        .ring span {
+            background: white;
+            font-size: 10px;
+            letter-spacing: 0.14em;
+            padding: 3px 8px;
+            text-transform: uppercase;
+            transform: translateY(-50%);
+        }
+
+        .operations {
+            --inset: 0;
+        }
+
+        .people {
+            --inset: 10%;
+            border-color: #1b3252;
+        }
+
+        .model {
+            --inset: 20%;
+            border-color: #4a5c75;
+        }
+
+        .data {
+            --inset: 30%;
+            border-color: #c9c0af;
+        }
+
+        .workflow {
+            --inset: 40%;
+            background: #0a1a2f;
+        }
+
+        .workflow span {
+            background: #0a1a2f;
+            color: #f7f4ee;
+        }
+
+        .layers {
+            border-top: 1px solid #c9c0af;
+            display: grid;
+        }
+
+        .layer {
+            border-bottom: 1px solid #c9c0af;
+            display: grid;
+            gap: 18px;
+            grid-template-columns: 36px 130px 1fr;
+            padding: 17px 0;
+        }
+
+        .num {
+            color: #768294;
+            font-size: 10px;
+            letter-spacing: 0.14em;
+        }
+
+        .layer p {
+            color: #1b3252;
+            font-size: 13.5px;
+        }
+
+        .example {
+            background: #f7f4ee;
+            border-left: 2px solid #0a1a2f;
+            margin-top: 26px;
+            padding: 18px 20px;
+        }
+
+        .example p {
+            color: #1b3252;
+            font-size: 14px;
+        }
+
+        footer {
+            border-top: 1px solid #c9c0af;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            left: 0;
+            padding-top: 10px;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="page">
+        <p class="eyebrow">DES 2026 edition</p>
+        <h1>The Five Layers</h1>
+        <p class="lead">Five layers to design before AI touches real work.</p>
+        <div class="diagram" aria-label="The Five Layers diagram">
+            <div class="ring operations"><span>Operations</span></div>
+            <div class="ring people"><span>People</span></div>
+            <div class="ring model"><span>Model</span></div>
+            <div class="ring data"><span>Data</span></div>
+            <div class="ring workflow"><span>Workflow</span></div>
+        </div>
+        <footer>
+            <span>Daniel Panea</span>
+            <span>danielpanea.com</span>
+            <span>Private AI for companies that value their data.</span>
+        </footer>
+    </section>
+
+    <section class="page">
+        <p class="eyebrow">Framework notes</p>
+        <h2>Use the layers before the pilot gets loose.</h2>
+        <div class="layers">
+            <article class="layer">
+                <span class="num">01</span>
+                <h3>Workflow</h3>
+                <p>What task is being improved? Where does it start and end? Which handoffs, exceptions, approvals, and escalation points already exist?</p>
+            </article>
+            <article class="layer">
+                <span class="num">02</span>
+                <h3>Data</h3>
+                <p>Which documents, systems, logs, and records may the pilot use? Which fields are sensitive? What must be masked, excluded, retained, or deleted?</p>
+            </article>
+            <article class="layer">
+                <span class="num">03</span>
+                <h3>Model</h3>
+                <p>Which model setup is accurate enough for the task? What latency, cost, hosting, prompt control, and evaluation constraints matter?</p>
+            </article>
+            <article class="layer">
+                <span class="num">04</span>
+                <h3>People</h3>
+                <p>Who owns the workflow? Who reviews the output? Who can override it? Who explains the decision when a customer, auditor, or manager asks?</p>
+            </article>
+            <article class="layer">
+                <span class="num">05</span>
+                <h3>Operations</h3>
+                <p>How will the pilot be monitored, evaluated, documented, secured, handed over, and rolled back when something breaks?</p>
+            </article>
+        </div>
+        <footer>
+            <span>Daniel Panea</span>
+            <span>danielpanea.com</span>
+            <span>Private AI for companies that value their data.</span>
+        </footer>
+    </section>
+
+    <section class="page">
+        <p class="eyebrow">Worked example</p>
+        <h2>CRM assistant, mapped quickly.</h2>
+        <div class="example">
+            <p><strong>Workflow:</strong> account managers ask for a customer summary before a renewal call, then review the answer before using it.</p>
+        </div>
+        <div class="example">
+            <p><strong>Data:</strong> contracts, support tickets, CRM notes, meeting transcripts, and invoice status are allowed. Legal disputes and HR notes are excluded.</p>
+        </div>
+        <div class="example">
+            <p><strong>Model:</strong> retrieval plus a small instruction-following model is enough if the answer cites source records and refuses unsupported claims.</p>
+        </div>
+        <div class="example">
+            <p><strong>People:</strong> sales owns the workflow, legal defines exclusions, IT controls access, and the account manager approves the final summary.</p>
+        </div>
+        <div class="example">
+            <p><strong>Operations:</strong> logs capture citations and refusals, access follows CRM permissions, and a weekly review checks bad answers before wider rollout.</p>
+        </div>
+        <footer>
+            <span>Daniel Panea</span>
+            <span>danielpanea.com</span>
+            <span>Private AI for companies that value their data.</span>
+        </footer>
+    </section>
+</body>
+</html>
