@@ -141,20 +141,24 @@
                     <p class="section-num">03 - Slides</p>
                     <h2>Want the slides when they go up?</h2>
                     <p class="des-copy-large">Slides go online a few days after the event. Drop your email below and I will send them when ready.</p>
-                    <p>I will also add you to a short monthly note when I publish new writing on private AI: blog posts, frameworks, the occasional case study. One email a month at most, and you can unsubscribe in one click.</p>
+                    <p>If you want the short monthly note as well, tick the box below. I use it for new writing on private AI: blog posts, frameworks, and the occasional case study.</p>
                 </div>
-                <form class="des-light-form" id="lead-form" data-kit-form-id="8913239" data-success-event="des2026_slides_form_success">
+                <form class="des-light-form" id="lead-form" data-kit-form-id="9387998" data-success-event="des2026_slides_form_success">
                     <label for="des-name">Name</label>
                     <input id="des-name" name="fields[first_name]" type="text" autocomplete="name" required>
                     <label for="des-email">Email</label>
                     <input id="des-email" name="email_address" type="email" autocomplete="email" required>
                     <label for="des-company">Company <span>optional</span></label>
                     <input id="des-company" name="fields[company]" type="text" autocomplete="organization">
-                    <input type="hidden" name="fields[source]" value="DES 2026 attendee">
+                    <label class="des-checkbox" for="des-monthly-note">
+                        <input id="des-monthly-note" name="fields[monthly_note]" type="checkbox" value="yes">
+                        <span>Also send me Daniel's monthly private AI note.</span>
+                    </label>
+                    <input id="des-slides-source" type="hidden" name="fields[source]" value="DES 2026 attendee - requested slides">
                     <button class="btn btn-primary" id="submit-btn" type="submit" data-analytics-event="des2026_slides_submit_click">Send me the slides</button>
-                    <p class="form-note" id="success-message" hidden>Thanks. Check your email and confirm your subscription so I can send the slides.</p>
+                    <p class="form-note" id="success-message" hidden>Thanks. I will send you the slides shortly.</p>
                     <p class="form-note form-note-error" id="error-message" hidden></p>
-                    <p class="des-form-microcopy">Used only for the slides and the monthly note. Not shared with anyone, not used for anything else.</p>
+                    <p class="des-form-microcopy">Used for the slides. If you tick the box, also for the monthly note. Not shared with anyone.</p>
                 </form>
             </div>
         </section>
@@ -207,7 +211,7 @@
                         <label>Email<input name="email_address" type="email" autocomplete="email" required></label>
                         <label class="full-width">What workflow are you thinking about?<textarea name="fields[workflow]" required></textarea></label>
                         <label class="full-width">What kind of data is involved?<textarea name="fields[data]"></textarea></label>
-                        <input type="hidden" name="fields[source]" value="DES 2026 attendee">
+                        <input type="hidden" name="fields[source]" value="DES 2026 attendee - requested personal follow-up">
                     </div>
                     <button class="btn btn-primary" type="submit" data-analytics-event="des2026_contact_form_submit">Send message</button>
                     <p class="form-note" id="contact-form-note" hidden></p>

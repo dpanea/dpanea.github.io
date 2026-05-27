@@ -198,8 +198,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (leadForm && submitButton) {
         const kitFormId = configureKitForm(leadForm, DEFAULT_KIT_FORM_ID);
         const successEvent = leadForm.getAttribute('data-success-event') || 'scorecard_form_success';
+        const monthlyNoteCheckbox = document.getElementById('des-monthly-note');
+        const slidesSourceField = document.getElementById('des-slides-source');
+        const updateSlidesSource = () => {
+            if (!slidesSourceField) return;
+            slidesSourceField.value = monthlyNoteCheckbox && monthlyNoteCheckbox.checked
+                ? 'DES 2026 attendee - requested slides and monthly note'
+                : 'DES 2026 attendee - requested slides';
+        };
+
+        if (monthlyNoteCheckbox) {
+            monthlyNoteCheckbox.addEventListener('change', updateSlidesSource);
+        }
 
         leadForm.addEventListener('submit', () => {
+            updateSlidesSource();
             ensureKitFrame();
 
             submitButton.disabled = true;
@@ -219,7 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         event: successEvent,
                         language: document.documentElement.lang || 'en',
                         path: window.location.pathname,
-                        kit_form_id: kitFormId
+                        kit_form_id: kitFormId,
+                        monthly_note: Boolean(monthlyNoteCheckbox && monthlyNoteCheckbox.checked)
                     }
                 }));
             }, 900);

@@ -2528,6 +2528,37 @@ article em {
     padding: 10px 0 12px;
 }
 
+.des-light-form .des-checkbox {
+    align-items: start;
+    border: 1px solid rgba(34, 47, 76, 0.14);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 18px 1fr;
+    justify-content: start;
+    letter-spacing: 0;
+    line-height: 1.45;
+    margin: 2px 0 8px;
+    padding: 13px 14px;
+    text-transform: none;
+}
+
+.des-light-form .des-checkbox input {
+    accent-color: var(--des-blue);
+    border: 0;
+    height: 16px;
+    margin: 2px 0 0;
+    padding: 0;
+    width: 16px;
+}
+
+.des-light-form .des-checkbox span {
+    color: var(--ink-700);
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+
 .des-light-form .btn {
     margin-top: 8px;
     width: 100%;
