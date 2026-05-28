@@ -2720,8 +2720,9 @@ article em {
 @media (max-width: 620px) {
     .des2026-page {
         --des-hero-bg-position: left top;
-        --des-hero-bg-size: cover;
-        --des-hero-overlay-alpha: 0.68;
+        --des-hero-bg-size: 220% auto;
+        --des-hero-brightness: 0.68;
+        --des-hero-overlay-alpha: 0.64;
     }
 
     .des-shell {
@@ -2729,13 +2730,52 @@ article em {
     }
 
     .des-hero {
-        padding-top: 96px;
-        padding-bottom: 38px;
+        display: block;
+        min-height: 0;
+        padding: 0;
+    }
+
+    .des-hero__media {
+        aspect-ratio: auto;
+        height: clamp(430px, 112.5vw, 540px);
+        inset: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    .des-hero__shade {
+        aspect-ratio: auto;
+        height: clamp(430px, 112.5vw, 540px);
+        inset: 0 0 auto 0;
+    }
+
+    .des-home-link {
+        background: rgba(9, 7, 25, 0.42);
+        right: 18px;
+        top: 18px;
+    }
+
+    .des-hero__inner {
+        background: var(--ink-900);
+        padding-bottom: 42px;
+        padding-top: 0;
     }
 
     .des-hero__copy h1 {
         font-size: 38px;
+        margin-top: -248px;
         max-width: 320px;
+        text-shadow: 0 3px 18px rgba(9, 7, 25, 0.78);
+    }
+
+    .des-hero__quote {
+        font-size: 21px;
+        margin-top: 28px;
+        text-shadow: 0 2px 16px rgba(9, 7, 25, 0.72);
+    }
+
+    .des-hero__sub {
+        margin-top: 84px;
     }
 
     .des-hero__quote,
