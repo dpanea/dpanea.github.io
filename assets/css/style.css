@@ -585,6 +585,11 @@ main {
     color: var(--ink-300);
 }
 
+.section-dark .text-link,
+.section-dark .text-button {
+    color: var(--paper-50);
+}
+
 .section-dark strong {
     color: var(--paper-50);
     font-weight: 500;
@@ -824,6 +829,89 @@ main {
     font-size: 15px;
     line-height: 1.55;
     max-width: 600px;
+}
+
+.demo-proof {
+    background: var(--ink-900);
+    border-top: 1px solid var(--ink-700);
+    color: var(--paper-50);
+    padding: 44px 32px;
+}
+
+.demo-proof__inner {
+    align-items: center;
+    display: grid;
+    gap: 36px;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+}
+
+.demo-proof__copy h2 {
+    color: var(--paper-50);
+    font-size: clamp(27px, 2.7vw, 38px);
+    max-width: 760px;
+}
+
+.demo-proof .eyebrow,
+.demo-proof__copy p:last-child {
+    color: var(--ink-300);
+}
+
+.demo-proof__copy p:last-child {
+    font-size: 16px;
+    line-height: 1.62;
+    margin-top: 18px;
+    max-width: 760px;
+}
+
+.demo-proof__action {
+    display: grid;
+    gap: 22px;
+    justify-items: start;
+}
+
+.demo-proof__facts {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+
+.demo-proof__facts::-webkit-scrollbar {
+    display: none;
+}
+
+.demo-proof__facts span {
+    border: 1px solid var(--ink-700);
+    color: var(--ink-300);
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    padding: 7px 9px;
+    text-transform: uppercase;
+}
+
+.demo-proof__links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.demo-proof .btn-primary {
+    background: var(--paper-50);
+    color: var(--ink-900);
+}
+
+.demo-proof .btn-primary:hover {
+    background: #ffffff;
+}
+
+.demo-proof .text-link {
+    color: var(--paper-50);
 }
 
 .case-list {
@@ -1855,7 +1943,8 @@ article em {
     .hero-inner,
     .speaking-grid,
     .scorecard-card,
-    .about-grid {
+    .about-grid,
+    .demo-proof__inner {
         grid-template-columns: 1fr;
     }
 
@@ -1980,6 +2069,11 @@ article em {
         flex-direction: column;
     }
 
+    .demo-proof {
+        padding-bottom: 38px;
+        padding-top: 38px;
+    }
+
     .case-card-reverse img {
         order: 0;
     }
@@ -2047,6 +2141,12 @@ article em {
     }
 
     .btn {
+        width: 100%;
+    }
+
+    .demo-proof__links {
+        align-items: stretch;
+        flex-direction: column;
         width: 100%;
     }
 
