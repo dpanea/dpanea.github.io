@@ -46,6 +46,22 @@ document.addEventListener('DOMContentLoaded', () => {
         link.setAttribute('href', href);
     });
 
+    document.querySelectorAll('.protected-nif').forEach((link) => {
+        const parts = [
+            link.getAttribute('data-nif-a'),
+            link.getAttribute('data-nif-b'),
+            link.getAttribute('data-nif-c')
+        ];
+        if (parts.some((part) => !part)) return;
+        const nif = parts.join('');
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            link.textContent = nif;
+            link.removeAttribute('href');
+            link.setAttribute('aria-label', nif);
+        });
+    });
+
     const revealTargets = document.querySelectorAll('.reveal, .reveal-group');
 
     if ('IntersectionObserver' in window) {
