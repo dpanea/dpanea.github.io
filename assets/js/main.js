@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const KIT_SUBMIT_TARGET = 'kit-submit-frame';
     const VIDEO_SRC = 'https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I';
 
+    // Safari ignores prefers-color-scheme inside SVG favicons, so swap the file
+    // directly: white monogram on dark tabs, the adaptive file on light tabs.
+    (() => {
+        const icon = document.querySelector('link[rel="icon"]');
+        if (!icon || !window.matchMedia) return;
+        const dir = icon.getAttribute('href').replace(/[^/]*$/, '');
+        const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const applyIcon = () => {
+            icon.setAttribute('href', dir + (darkQuery.matches ? 'monogram-white.svg' : 'favicon.svg'));
+        };
+        applyIcon();
+        if (darkQuery.addEventListener) darkQuery.addEventListener('change', applyIcon);
+        else if (darkQuery.addListener) darkQuery.addListener(applyIcon);
+    })();
+
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
 
