@@ -570,6 +570,51 @@ main {
     text-wrap: balance;
 }
 
+/* Split page hero (text + visual) */
+.page-hero--split .section-inner {
+    align-items: center;
+    display: grid;
+    gap: clamp(36px, 5vw, 72px);
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.62fr);
+}
+
+.page-hero--split h1 {
+    max-width: none;
+}
+
+.page-hero--split .page-intro {
+    max-width: 560px;
+}
+
+.page-hero__media {
+    margin: 0;
+    position: relative;
+}
+
+.page-hero__media img {
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    display: block;
+    filter: grayscale(100%) contrast(1.02);
+    height: auto;
+    transition: filter 0.5s ease;
+    width: 100%;
+}
+
+.page-hero__media:hover img {
+    filter: grayscale(0%) contrast(1);
+}
+
+.page-hero__caption {
+    color: var(--ink-500);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+
 .section-cream {
     background: var(--paper-100);
 }
@@ -829,6 +874,14 @@ main {
     font-size: 15px;
     line-height: 1.55;
     max-width: 600px;
+}
+
+.supporting-offer .text-link {
+    flex: 0 0 auto;
+    max-width: 100%;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    width: max-content;
 }
 
 .demo-proof {
@@ -1247,6 +1300,59 @@ main {
 
 .partner-card__media a:hover {
     opacity: 0.78;
+}
+
+/* Partners page tiles (delivery stories + working models) */
+.partner-tiles {
+    display: grid;
+    gap: clamp(16px, 2.4vw, 28px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 48px;
+}
+
+.partner-tile {
+    background: var(--bg-elev);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-sm);
+    padding: clamp(26px, 3.2vw, 36px);
+}
+
+.partner-tile__tag {
+    color: var(--ink-500);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.partner-tile h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.partner-tile p {
+    font-size: 15px;
+    line-height: 1.62;
+}
+
+.partner-tile dl {
+    margin: 0;
+}
+
+.partner-tile dt {
+    color: var(--ink-500);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+.partner-tile dd {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 4px 0 0;
 }
 
 .article-page {
@@ -2091,6 +2197,11 @@ article em {
     .page-hero {
         padding-bottom: 70px;
         padding-top: 72px;
+    }
+
+    .page-hero--split .section-inner {
+        gap: 36px;
+        grid-template-columns: 1fr;
     }
 
     .section-head,

@@ -38,6 +38,10 @@
                 paths: { en: '/case-studies.html', de: '/de/case-studies.html', es: '/es/case-studies.html' }
             },
             {
+                match: /^\/(?:de\/|es\/)?partners\.html$/,
+                paths: { en: '/partners.html', de: '/de/partners.html', es: '/es/partners.html' }
+            },
+            {
                 match: /^\/blog\/(?:.*)?$/,
                 paths: { en: normalizedPath, de: '/de/', es: '/es/' }
             },
