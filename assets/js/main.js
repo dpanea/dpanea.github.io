@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const DEFAULT_KIT_FORM_ID = '8913239';
     const DEFAULT_CONTACT_FORM_ID = '9387998';
     const KIT_SUBMIT_TARGET = 'kit-submit-frame';
-    const VIDEO_SRC = 'https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I';
 
     // Safari ignores prefers-color-scheme inside SVG favicons, so swap the file
     // directly: white monogram on dark tabs, the adaptive file on light tabs.
@@ -171,18 +170,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const lightbox = document.getElementById('video-lightbox');
-    const openVideo = document.getElementById('open-video-lightbox');
-    const openVideoLinks = document.querySelectorAll('[data-open-video]');
+    const openVideoButtons = document.querySelectorAll('[data-open-video]');
     const closeVideo = document.getElementById('lightbox-close');
     const backdrop = document.getElementById('lightbox-backdrop');
     const iframe = document.getElementById('keynote-video');
 
     if (lightbox && iframe) {
-        const open = () => {
+        const withAutoplay = (src) => `${src}${src.includes('?') ? '&' : '?'}autoplay=1`;
+
+        const open = (trigger) => {
+            const src = trigger.getAttribute('data-video-src');
+            const title = trigger.getAttribute('data-video-title') || 'Conference keynote';
+            if (!src) return;
+
+            iframe.src = withAutoplay(src);
+            iframe.title = title;
             lightbox.classList.add('is-open');
             lightbox.setAttribute('aria-hidden', 'false');
             document.body.classList.add('no-scroll');
-            iframe.src = `${VIDEO_SRC}&autoplay=1`;
         };
 
         const close = () => {
@@ -192,8 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
             iframe.src = '';
         };
 
-        if (openVideo) openVideo.addEventListener('click', open);
-        openVideoLinks.forEach((button) => button.addEventListener('click', open));
+        openVideoButtons.forEach((button) => {
+            button.addEventListener('click', () => open(button));
+        });
         if (closeVideo) closeVideo.addEventListener('click', close);
         if (backdrop) backdrop.addEventListener('click', close);
         document.addEventListener('keydown', (event) => {

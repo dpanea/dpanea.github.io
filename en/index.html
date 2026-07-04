@@ -383,20 +383,34 @@
                 <div class="section-head">
                     <div class="section-num">07 - Speaking</div>
                     <div>
-                        <h2>Talks on private AI in European companies.</h2>
+                        <h2>Talks on private AI, data control, and real business workflows.</h2>
                     </div>
                 </div>
-                <div class="speaking-grid reveal">
-                    <button class="video-card" id="open-video-lightbox" type="button" aria-label="Watch keynote video">
-                        <img src="../assets/images/keynote-thumbnail.jpg" alt="Daniel Panea speaking at a conference" loading="lazy" width="1600" height="1067">
-                        <span class="play-button" aria-hidden="true"></span>
-                    </button>
-                    <div class="speaking-copy">
-                        <p class="eyebrow">Conference keynote</p>
-                        <h3>Private AI in Europe.</h3>
-                        <p>Presented at the Spanish National Conference on the Future of AI in Europe: how companies can adopt AI while keeping control over sensitive data, internal knowledge, and deployment choices.</p>
-                        <button class="text-link text-button" type="button" data-open-video data-analytics-event="keynote_video_click">Watch the talk</button>
-                    </div>
+                <div class="speaking-list reveal">
+                    <article class="speaking-grid">
+                        <button class="video-card" type="button" data-open-video data-video-src="https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I" data-video-title="Case study: AI for support tickets" aria-label="Watch support ticket AI case study video">
+                            <img src="../assets/images/keynote-thumbnail.jpg" alt="Daniel Panea speaking at a conference" loading="lazy" width="1600" height="1067">
+                            <span class="play-button" aria-hidden="true"></span>
+                        </button>
+                        <div class="speaking-copy">
+                            <p class="eyebrow">Conference case study</p>
+                            <h3>Case study: AI for support tickets.</h3>
+                            <p>How we built an intelligent AI pipeline for support tickets: turning historical tickets and attachments into summaries, root-cause clusters, dashboard insights, and strategic decisions for IT teams.</p>
+                            <button class="text-link text-button" type="button" data-open-video data-video-src="https://www.youtube.com/embed/gSTAB4mQfOQ?si=k5yDaM2SdcIgT_9I" data-video-title="Case study: AI for support tickets" data-analytics-event="keynote_video_click">Watch the talk</button>
+                        </div>
+                    </article>
+                    <article class="speaking-grid">
+                        <button class="video-card" type="button" data-open-video data-video-src="https://www.youtube.com/embed/51ArYiNsizo" data-video-title="AI without losing control of your data | DES 2026 Talk" aria-label="Watch DES 2026 keynote video">
+                            <img src="../assets/images/des-2026-talk-thumbnail.jpg" alt="Daniel Panea speaking at DES 2026 in Málaga" loading="lazy" width="1280" height="720">
+                            <span class="play-button" aria-hidden="true"></span>
+                        </button>
+                        <div class="speaking-copy">
+                            <p class="eyebrow">DES 2026 keynote</p>
+                            <h3>AI without losing control of your data | DES 2026 Talk</h3>
+                            <p>Full DES 2026 talk from Málaga: how European companies can make AI useful with real company data while keeping control over data boundaries, model choices, human decisions, and operations.</p>
+                            <button class="text-link text-button" type="button" data-open-video data-video-src="https://www.youtube.com/embed/51ArYiNsizo" data-video-title="AI without losing control of your data | DES 2026 Talk" data-analytics-event="des_2026_video_click">Watch the talk</button>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -654,11 +668,8 @@
 
     <div class="lightbox" id="video-lightbox" aria-hidden="true">
         <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
-        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
-            <div class="lightbox-head">
-                <h3 id="lightbox-title">Conference keynote</h3>
-                <button id="lightbox-close" type="button" aria-label="Close video">&times;</button>
-            </div>
+        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Video player">
+            <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close video">&times;</button>
             <iframe id="keynote-video" title="Conference keynote" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>

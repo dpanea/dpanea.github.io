@@ -1056,6 +1056,15 @@ main {
     margin-top: 42px;
 }
 
+.speaking-list {
+    display: grid;
+    gap: 64px;
+}
+
+.speaking-list .speaking-grid + .speaking-grid {
+    padding-top: 8px;
+}
+
 .speaking-grid {
     align-items: center;
     display: grid;
@@ -1985,24 +1994,23 @@ article em {
     width: 100%;
 }
 
-.lightbox-head {
+.lightbox-close {
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 18px;
-}
-
-.lightbox-head h3 {
-    font-size: 20px;
-}
-
-.lightbox-head button {
-    background: transparent;
-    border: 0;
-    color: var(--ink-900);
+    background: rgba(10, 26, 47, 0.78);
+    border: 1px solid rgba(247, 244, 238, 0.52);
+    border-radius: 50%;
+    color: var(--paper-50);
     cursor: pointer;
+    display: flex;
     font-size: 28px;
+    height: 38px;
+    justify-content: center;
     line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 38px;
+    z-index: 2;
 }
 
 .lightbox iframe {
