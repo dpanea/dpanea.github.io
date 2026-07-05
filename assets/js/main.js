@@ -176,6 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const iframe = document.getElementById('keynote-video');
 
     if (lightbox && iframe) {
+        const videoAliases = {
+            'des-2026': 'des-2026',
+            des2026: 'des-2026',
+            des: 'des-2026',
+            'support-tickets': 'support-tickets',
+            support: 'support-tickets',
+            tickets: 'support-tickets'
+        };
         const withAutoplay = (src) => `${src}${src.includes('?') ? '&' : '?'}autoplay=1`;
 
         const open = (trigger) => {
@@ -200,6 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
         openVideoButtons.forEach((button) => {
             button.addEventListener('click', () => open(button));
         });
+
+        const requestedVideo = new URLSearchParams(window.location.search).get('video');
+        const requestedVideoId = requestedVideo ? videoAliases[requestedVideo.toLowerCase()] : '';
+        const requestedVideoButton = requestedVideoId
+            ? document.querySelector(`[data-open-video][data-video-id="${requestedVideoId}"]`)
+            : null;
+
+        if (requestedVideoButton) {
+            window.setTimeout(() => open(requestedVideoButton), 0);
+        }
+
         if (closeVideo) closeVideo.addEventListener('click', close);
         if (backdrop) backdrop.addEventListener('click', close);
         document.addEventListener('keydown', (event) => {
